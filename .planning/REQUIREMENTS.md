@@ -71,8 +71,8 @@
 
 ### Infrastructure
 
-- [ ] **INFR-01**: Backend deployment setup (Docker Compose for MiroFish backend)
-- [ ] **INFR-02**: Frontend build pipeline (Vite 8 + React 19 + TypeScript)
+- [x] **INFR-01**: Backend deployment setup (Docker Compose for MiroFish backend)
+- [x] **INFR-02**: Frontend build pipeline (Vite 8 + React 19 + TypeScript)
 - [ ] **INFR-03**: API client with typed contracts (Zod schemas for all backend endpoints)
 - [ ] **INFR-04**: WebSocket/polling architecture for real-time simulation updates
 
@@ -120,8 +120,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFR-01 | Phase 1 | Pending |
-| INFR-02 | Phase 1 | Pending |
+| INFR-01 | Phase 1 | Complete |
+| INFR-02 | Phase 1 | Complete |
 | INFR-03 | Phase 1 | Pending |
 | INFR-04 | Phase 1 | Pending |
 | I18N-01 | Phase 2 | Pending |
