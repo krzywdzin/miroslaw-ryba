@@ -120,13 +120,62 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| INFR-01 | Phase 1 | Pending |
+| INFR-02 | Phase 1 | Pending |
+| INFR-03 | Phase 1 | Pending |
+| INFR-04 | Phase 1 | Pending |
+| I18N-01 | Phase 2 | Pending |
+| I18N-02 | Phase 2 | Pending |
+| I18N-03 | Phase 2 | Pending |
+| I18N-04 | Phase 2 | Pending |
+| UIUX-01 | Phase 2 | Pending |
+| UIUX-02 | Phase 2 | Pending |
+| UIUX-03 | Phase 2 | Pending |
+| UIUX-05 | Phase 2 | Pending |
+| UIUX-06 | Phase 2 | Pending |
+| UIUX-08 | Phase 2 | Pending |
+| CONF-01 | Phase 3 | Pending |
+| CONF-02 | Phase 3 | Pending |
+| CONF-03 | Phase 3 | Pending |
+| CONF-04 | Phase 3 | Pending |
+| CONF-05 | Phase 3 | Pending |
+| CONF-06 | Phase 3 | Pending |
+| CONF-07 | Phase 3 | Pending |
+| GRPH-01 | Phase 4 | Pending |
+| GRPH-02 | Phase 4 | Pending |
+| GRPH-03 | Phase 4 | Pending |
+| GRPH-04 | Phase 4 | Pending |
+| GRPH-05 | Phase 4 | Pending |
+| ENVR-01 | Phase 5 | Pending |
+| ENVR-02 | Phase 5 | Pending |
+| ENVR-03 | Phase 5 | Pending |
+| ENVR-04 | Phase 5 | Pending |
+| SIMU-01 | Phase 6 | Pending |
+| SIMU-02 | Phase 6 | Pending |
+| SIMU-03 | Phase 6 | Pending |
+| SIMU-04 | Phase 6 | Pending |
+| REPT-01 | Phase 7 | Pending |
+| REPT-02 | Phase 7 | Pending |
+| REPT-03 | Phase 7 | Pending |
+| REPT-04 | Phase 7 | Pending |
+| CHAT-01 | Phase 8 | Pending |
+| CHAT-02 | Phase 8 | Pending |
+| CHAT-03 | Phase 8 | Pending |
+| CHAT-04 | Phase 8 | Pending |
+| UIUX-04 | Phase 9 | Pending |
+| UIUX-07 | Phase 9 | Pending |
+| DOCS-01 | Phase 10 | Pending |
+| DOCS-02 | Phase 10 | Pending |
+| DOCS-03 | Phase 10 | Pending |
+| DOCS-04 | Phase 10 | Pending |
+| DOCS-05 | Phase 10 | Pending |
+| DOCS-06 | Phase 10 | Pending |
 
 **Coverage:**
-- v1 requirements: 42 total
-- Mapped to phases: 0
-- Unmapped: 42
+- v1 requirements: 50 total
+- Mapped to phases: 50
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-20*
-*Last updated: 2026-03-20 after initial definition*
+*Last updated: 2026-03-20 after roadmap creation*
