@@ -12,7 +12,7 @@ Miroslaw Ryba replaces MiroFish's Chinese Vue frontend with a clean, Polish-lang
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Infrastructure and API Foundation** - Project scaffold, backend deployment, typed API client with Zod contracts
+- [x] **Phase 1: Infrastructure and API Foundation** - Project scaffold, backend deployment, typed API client with Zod contracts (completed 2026-03-20)
 - [ ] **Phase 2: App Shell and Cross-Cutting Concerns** - i18n framework, stepper layout, loading/error patterns, responsive design
 - [ ] **Phase 3: Configuration Panel** - API keys, model selection, simulation parameters, Zep Cloud, Docker status
 - [ ] **Phase 4: Graph Construction** - Pipeline stage 1: seed upload, graph building progress, knowledge graph visualization
@@ -179,7 +179,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure and API Foundation | 0/2 | Planning complete | - |
+| 1. Infrastructure and API Foundation | 2/2 | Complete   | 2026-03-20 |
 | 2. App Shell and Cross-Cutting Concerns | 0/? | Not started | - |
 | 3. Configuration Panel | 0/? | Not started | - |
 | 4. Graph Construction | 0/? | Not started | - |
