@@ -1,0 +1,725 @@
+openapi: "3.1.0"
+info:
+  title: "MiroFish Backend API"
+  version: "1.0.0"
+  description: "REST API for MiroFish AI prediction pipeline. Discovered from Flask source code."
+servers:
+  - url: "http://localhost:5050"
+    description: "Local Docker backend"
+
+tags:
+  - name: graph
+    description: Knowledge graph operations
+  - name: simulation
+    description: Social media simulation operations
+  - name: report
+    description: Analysis report operations
+
+paths:
+  /api/graph/project/{project_id}:
+    get:
+      tags: [graph]
+      summary: Get project by ID
+      operationId: getProject
+      parameters:
+        - name: project_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Project details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProjectResponse"
+    delete:
+      tags: [graph]
+      summary: Delete project
+      operationId: deleteProject
+      parameters:
+        - name: project_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Deletion result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageResponse"
+
+  /api/graph/project/list:
+    get:
+      tags: [graph]
+      summary: List projects
+      operationId: listProjects
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 50
+      responses:
+        "200":
+          description: Project list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProjectListResponse"
+
+  /api/graph/project/{project_id}/reset:
+    post:
+      tags: [graph]
+      summary: Reset project
+      operationId: resetProject
+      parameters:
+        - name: project_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Reset project
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProjectResponse"
+
+  /api/graph/ontology/generate:
+    post:
+      tags: [graph]
+      summary: Create project and extract ontology
+      operationId: generateOntology
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                files:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+                simulation_requirement:
+                  type: string
+                project_name:
+                  type: string
+      responses:
+        "200":
+          description: Ontology result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OntologyResponse"
+
+  /api/graph/build:
+    post:
+      tags: [graph]
+      summary: Build knowledge graph
+      operationId: buildGraph
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [project_id]
+              properties:
+                project_id:
+                  type: string
+      responses:
+        "200":
+          description: Build task created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BuildResponse"
+
+  /api/graph/task/{task_id}:
+    get:
+      tags: [graph]
+      summary: Get task status
+      operationId: getTask
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Task details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TaskResponse"
+
+  /api/graph/tasks:
+    get:
+      tags: [graph]
+      summary: List all tasks
+      operationId: listTasks
+      responses:
+        "200":
+          description: Task list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TaskListResponse"
+
+  /api/graph/data/{graph_id}:
+    get:
+      tags: [graph]
+      summary: Get graph data
+      operationId: getGraphData
+      parameters:
+        - name: graph_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Graph data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GraphDataResponse"
+
+  /api/graph/delete/{graph_id}:
+    delete:
+      tags: [graph]
+      summary: Delete graph
+      operationId: deleteGraph
+      parameters:
+        - name: graph_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Deletion result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageResponse"
+
+  /api/simulation/create:
+    post:
+      tags: [simulation]
+      summary: Create simulation
+      operationId: createSimulation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [project_id]
+              properties:
+                project_id:
+                  type: string
+                graph_id:
+                  type: string
+                enable_twitter:
+                  type: boolean
+                enable_reddit:
+                  type: boolean
+      responses:
+        "200":
+          description: Simulation created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SimulationResponse"
+
+  /api/simulation/prepare:
+    post:
+      tags: [simulation]
+      summary: Prepare simulation
+      operationId: prepareSimulation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [simulation_id, entity_types]
+              properties:
+                simulation_id:
+                  type: string
+                entity_types:
+                  type: array
+                  items:
+                    type: string
+                use_llm_for_profiles:
+                  type: boolean
+                parallel_profile_count:
+                  type: integer
+                force_regenerate:
+                  type: boolean
+      responses:
+        "200":
+          description: Preparation status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PrepareStatusResponse"
+
+  /api/simulation/start:
+    post:
+      tags: [simulation]
+      summary: Start simulation
+      operationId: startSimulation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [simulation_id]
+              properties:
+                simulation_id:
+                  type: string
+                platform:
+                  type: string
+                max_rounds:
+                  type: integer
+                enable_graph_memory_update:
+                  type: boolean
+                force:
+                  type: boolean
+      responses:
+        "200":
+          description: Simulation started
+
+  /api/simulation/stop:
+    post:
+      tags: [simulation]
+      summary: Stop simulation
+      operationId: stopSimulation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [simulation_id]
+              properties:
+                simulation_id:
+                  type: string
+      responses:
+        "200":
+          description: Simulation stopped
+
+  /api/simulation/{simulation_id}:
+    get:
+      tags: [simulation]
+      summary: Get simulation state
+      operationId: getSimulation
+      parameters:
+        - name: simulation_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Simulation state
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SimulationResponse"
+
+  /api/report/generate:
+    post:
+      tags: [report]
+      summary: Generate report
+      operationId: generateReport
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [simulation_id]
+              properties:
+                simulation_id:
+                  type: string
+                force_regenerate:
+                  type: boolean
+      responses:
+        "200":
+          description: Report generation started
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReportGenerateResponse"
+
+  /api/report/{report_id}:
+    get:
+      tags: [report]
+      summary: Get report
+      operationId: getReport
+      parameters:
+        - name: report_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Report details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReportResponse"
+
+  /api/report/list:
+    get:
+      tags: [report]
+      summary: List reports
+      operationId: listReports
+      parameters:
+        - name: simulation_id
+          in: query
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Report list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReportListResponse"
+
+  /api/report/chat:
+    post:
+      tags: [report]
+      summary: Chat with ReportAgent
+      operationId: reportChat
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [simulation_id, message]
+              properties:
+                simulation_id:
+                  type: string
+                message:
+                  type: string
+                chat_history:
+                  type: array
+                  items: {}
+      responses:
+        "200":
+          description: Chat response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ChatResponse"
+
+  /api/report/check/{simulation_id}:
+    get:
+      tags: [report]
+      summary: Check if report exists
+      operationId: checkReport
+      parameters:
+        - name: simulation_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Report check result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReportCheckResponse"
+
+components:
+  schemas:
+    MessageResponse:
+      type: object
+      required: [success, message]
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+
+    Project:
+      type: object
+      required: [project_id]
+      properties:
+        project_id:
+          type: string
+        project_name:
+          type: string
+        simulation_requirement:
+          type: string
+
+    ProjectResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          $ref: "#/components/schemas/Project"
+        message:
+          type: string
+
+    ProjectListResponse:
+      type: object
+      required: [success, data, count]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Project"
+        count:
+          type: integer
+
+    OntologyResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [project_id]
+          properties:
+            project_id:
+              type: string
+            ontology: {}
+
+    BuildResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [project_id, task_id]
+          properties:
+            project_id:
+              type: string
+            task_id:
+              type: string
+
+    Task:
+      type: object
+      required: [task_id, status]
+      properties:
+        task_id:
+          type: string
+        status:
+          type: string
+        progress:
+          type: number
+        error:
+          type: string
+
+    TaskResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          $ref: "#/components/schemas/Task"
+
+    TaskListResponse:
+      type: object
+      required: [success, data, count]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Task"
+        count:
+          type: integer
+
+    GraphDataResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [nodes, edges]
+          properties:
+            nodes:
+              type: array
+              items:
+                type: object
+                required: [id, name]
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  type:
+                    type: string
+            edges:
+              type: array
+              items:
+                type: object
+                required: [source, target]
+                properties:
+                  source:
+                    type: string
+                  target:
+                    type: string
+                  relation:
+                    type: string
+
+    SimulationState:
+      type: object
+      required: [simulation_id, project_id, status]
+      properties:
+        simulation_id:
+          type: string
+        project_id:
+          type: string
+        status:
+          type: string
+        graph_id:
+          type: string
+        enable_twitter:
+          type: boolean
+        enable_reddit:
+          type: boolean
+
+    SimulationResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          $ref: "#/components/schemas/SimulationState"
+
+    PrepareStatusResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [task_id, status]
+          properties:
+            task_id:
+              type: string
+            status:
+              type: string
+            progress:
+              type: number
+            prepare_info: {}
+
+    Report:
+      type: object
+      required: [report_id]
+      properties:
+        report_id:
+          type: string
+        simulation_id:
+          type: string
+        markdown_content:
+          type: string
+        outline: {}
+        status:
+          type: string
+
+    ReportResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          $ref: "#/components/schemas/Report"
+
+    ReportListResponse:
+      type: object
+      required: [success, data, count]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Report"
+        count:
+          type: integer
+
+    ReportGenerateResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [simulation_id, report_id, task_id, status]
+          properties:
+            simulation_id:
+              type: string
+            report_id:
+              type: string
+            task_id:
+              type: string
+            status:
+              type: string
+
+    ChatResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [response]
+          properties:
+            response:
+              type: string
+            tool_calls:
+              type: array
+              items: {}
+            sources:
+              type: array
+              items: {}
+
+    ReportCheckResponse:
+      type: object
+      required: [success, data]
+      properties:
+        success:
+          type: boolean
+        data:
+          type: object
+          required: [has_report]
+          properties:
+            has_report:
+              type: boolean
+            report_status:
+              type: string
+            interview_unlocked:
+              type: boolean
