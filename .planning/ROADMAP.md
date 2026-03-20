@@ -34,11 +34,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Vite + React + TypeScript project builds and serves a blank page connected to the backend
   3. Typed API client modules exist for all backend blueprints with Zod-validated response schemas
   4. WebSocket/polling infrastructure is in place for real-time simulation updates
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Git submodule, Docker Compose, Vite+React+TS scaffold, ESLint/Prettier/Vitest setup
+- [ ] 01-02-PLAN.md — Typed API client with Zod schemas, error mapping, polling hook, OpenAPI spec
 
 ### Phase 2: App Shell and Cross-Cutting Concerns
 **Goal**: Users see a complete application shell with Polish/English i18n, 5-stage pipeline stepper, and consistent loading/error patterns that all subsequent features plug into
@@ -179,7 +179,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure and API Foundation | 0/? | Not started | - |
+| 1. Infrastructure and API Foundation | 0/2 | Planning complete | - |
 | 2. App Shell and Cross-Cutting Concerns | 0/? | Not started | - |
 | 3. Configuration Panel | 0/? | Not started | - |
 | 4. Graph Construction | 0/? | Not started | - |
