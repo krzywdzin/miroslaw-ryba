@@ -31,7 +31,7 @@ export async function apiRequest<T>(
     try {
       const errorBody = await response.json()
       rawMessage = errorBody.message || errorBody.error || response.statusText
-      errorMessage = mapChineseError(rawMessage)
+      errorMessage = mapChineseError(rawMessage ?? errorMessage)
     } catch {
       // If JSON parsing fails, use statusText
     }
