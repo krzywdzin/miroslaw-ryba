@@ -1,0 +1,18 @@
+services:
+  mirofish-backend:
+    image: ghcr.io/666ghj/MiroFish:latest
+    container_name: mirofish-backend
+    env_file: .env
+    ports:
+      - "${BACKEND_PORT:-5050}:5001"
+    volumes:
+      - ./data/uploads:/app/backend/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    # Run only the Flask backend, not the Vue frontend
+    command: ["python", "backend/run.py"]
