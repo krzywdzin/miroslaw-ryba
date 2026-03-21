@@ -50,11 +50,12 @@ Plans:
   3. Polish plural forms render correctly (e.g., "1 agent", "2 agenty", "5 agentow")
   4. All async operations show appropriate loading states (skeletons/spinners) and failures show Polish/English error messages with retry buttons
   5. Chinese backend error messages are intercepted and displayed as Polish/English equivalents
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Design system (shadcn/ui + Tailwind v4 + Geist font) and i18n framework (react-i18next PL/EN)
+- [ ] 02-02-PLAN.md — App shell layout (header, sidebar stepper, footer, router) and dashboard page
+- [ ] 02-03-PLAN.md — Loading/error patterns (skeleton, spinner, auto-retry toast, Chinese error mapping) and Polish plural tests
 
 ### Phase 3: Configuration Panel
 **Goal**: Users can fully configure MiroFish system settings (API keys, models, simulation parameters, Zep Cloud, Docker) without editing config files
@@ -180,7 +181,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and API Foundation | 2/2 | Complete    | 2026-03-20 |
-| 2. App Shell and Cross-Cutting Concerns | 0/? | Not started | - |
+| 2. App Shell and Cross-Cutting Concerns | 0/3 | Not started | - |
 | 3. Configuration Panel | 0/? | Not started | - |
 | 4. Graph Construction | 0/? | Not started | - |
 | 5. Environment Setup | 0/? | Not started | - |
