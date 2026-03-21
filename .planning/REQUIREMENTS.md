@@ -17,9 +17,9 @@
 
 ### Pipeline — Graph Construction
 
-- [ ] **GRPH-01**: User can upload seed material files via drag-and-drop or file picker
-- [ ] **GRPH-02**: User can describe prediction goal in natural language text input
-- [ ] **GRPH-03**: User can see graph construction progress with status messages
+- [x] **GRPH-01**: User can upload seed material files via drag-and-drop or file picker
+- [x] **GRPH-02**: User can describe prediction goal in natural language text input
+- [x] **GRPH-03**: User can see graph construction progress with status messages
 - [ ] **GRPH-04**: User can view interactive knowledge graph visualization (zoom, pan, filter by entity type)
 - [ ] **GRPH-05**: User can click graph nodes to inspect entity details
 
@@ -141,9 +141,9 @@
 | CONF-05 | Phase 3 | Complete |
 | CONF-06 | Phase 3 | Complete |
 | CONF-07 | Phase 3 | Complete |
-| GRPH-01 | Phase 4 | Pending |
-| GRPH-02 | Phase 4 | Pending |
-| GRPH-03 | Phase 4 | Pending |
+| GRPH-01 | Phase 4 | Complete |
+| GRPH-02 | Phase 4 | Complete |
+| GRPH-03 | Phase 4 | Complete |
 | GRPH-04 | Phase 4 | Pending |
 | GRPH-05 | Phase 4 | Pending |
 | ENVR-01 | Phase 5 | Pending |
