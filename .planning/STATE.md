@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in-progress
+status: completed
 stopped_at: Completed 02-03 cross-cutting patterns (Phase 2 complete)
-last_updated: "2026-03-21T03:05:34Z"
+last_updated: "2026-03-21T03:07:55.802Z"
 last_activity: 2026-03-21 -- Completed 02-03 cross-cutting patterns
 progress:
   total_phases: 10
@@ -74,6 +74,9 @@ Recent decisions affecting current work:
 - [02-03]: Error handler uses Map for per-context retry counters enabling independent operation tracking
 - [02-03]: MinScreenMessage uses inline CSS media query for precise 1024px breakpoint
 - [02-03]: Polish plural tests cover all 4 CLDR categories including edge cases
+- [Phase 02]: Stepper is pure display component -- no internal state, status passed via props
+- [Phase 02]: Backend status polls /graph_bp/projects every 30s via TanStack Query
+- [Phase 02]: TooltipProvider wraps entire app at root level in providers.tsx
 
 ### Pending Todos
 
