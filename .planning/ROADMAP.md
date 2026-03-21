@@ -67,11 +67,11 @@ Plans:
   3. User can adjust simulation parameters (agent count, interaction rounds, platform weights) and see current values
   4. User can configure Zep Cloud settings and test the connection
   5. User can view Docker container status and start/stop/restart containers
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
+- [ ] 03-01-PLAN.md — Config store, Zod schemas, i18n settings namespace, API Keys + Model + Simulation sections with auto-save and LLM connection test
+- [ ] 03-02-PLAN.md — Zep Cloud section with connection test, Docker management dashboard (containers, logs, resources, compose controls)
 
 ### Phase 4: Graph Construction
 **Goal**: Users can upload seed material and build a knowledge graph, completing pipeline stage 1 end-to-end
@@ -182,7 +182,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and API Foundation | 2/2 | Complete    | 2026-03-20 |
 | 2. App Shell and Cross-Cutting Concerns | 2/3 | Complete    | 2026-03-21 |
-| 3. Configuration Panel | 0/? | Not started | - |
+| 3. Configuration Panel | 0/2 | Not started | - |
 | 4. Graph Construction | 0/? | Not started | - |
 | 5. Environment Setup | 0/? | Not started | - |
 | 6. Simulation | 0/? | Not started | - |
