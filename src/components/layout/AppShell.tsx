@@ -5,12 +5,14 @@ import { Header } from './Header'
 import { Sidebar } from './Sidebar'
 import { SidebarMobile } from './SidebarMobile'
 import { Footer } from './Footer'
+import { MinScreenMessage } from '@/components/shared/MinScreenMessage'
 
 export function AppShell() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div className="flex min-h-screen flex-col">
+      <MinScreenMessage />
       <Header onMenuClick={() => setMobileMenuOpen(true)} />
       <div className="flex flex-1">
         <Sidebar />
