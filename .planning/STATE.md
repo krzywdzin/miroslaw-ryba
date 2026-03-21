@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 6 context gathered
-last_updated: "2026-03-21T14:30:06.530Z"
+stopped_at: Phase 6 UI-SPEC approved
+last_updated: "2026-03-21T14:56:06.034Z"
 last_activity: 2026-03-21 -- Completed 05-02 Agent cards, parameter form, launch flow
 progress:
   total_phases: 10
@@ -112,6 +112,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T14:30:06.527Z
-Stopped at: Phase 6 context gathered
-Resume file: .planning/phases/06-simulation/06-CONTEXT.md
+Last session: 2026-03-21T14:56:06.032Z
+Stopped at: Phase 6 UI-SPEC approved
+Resume file: .planning/phases/06-simulation/06-UI-SPEC.md
