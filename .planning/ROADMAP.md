@@ -82,11 +82,11 @@ Plans:
   2. User can see graph construction progress with status messages as the backend processes the input
   3. User can view the resulting knowledge graph as an interactive visualization (zoom, pan, filter by entity type)
   4. User can click graph nodes to inspect entity details (name, type, relationships)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — Graph store, upload form (dropzone + file list + prediction input), build progress mini-stepper, routing
+- [ ] 04-02-PLAN.md — Interactive graph visualization (Reagraph), entity type filtering, node search, slide-out detail panel, color legend
 
 ### Phase 5: Environment Setup
 **Goal**: Users can review extracted entities, agent profiles, and simulation parameters before launching simulation, completing pipeline stage 2
@@ -183,7 +183,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Infrastructure and API Foundation | 2/2 | Complete    | 2026-03-20 |
 | 2. App Shell and Cross-Cutting Concerns | 2/3 | Complete    | 2026-03-21 |
 | 3. Configuration Panel | 0/2 | Complete    | 2026-03-21 |
-| 4. Graph Construction | 0/? | Not started | - |
+| 4. Graph Construction | 0/2 | Not started | - |
 | 5. Environment Setup | 0/? | Not started | - |
 | 6. Simulation | 0/? | Not started | - |
 | 7. Reports | 0/? | Not started | - |
