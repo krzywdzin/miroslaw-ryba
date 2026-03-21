@@ -1,0 +1,61 @@
+{
+  "tabs": {
+    "entities": "Entities",
+    "agents": "Agents",
+    "parameters": "Parameters"
+  },
+  "entities": {
+    "title": "Entities and relationships",
+    "columns": {
+      "name": "Name",
+      "type": "Type",
+      "relationships": "Relationships"
+    },
+    "filter": {
+      "all": "All types",
+      "placeholder": "Filter by type..."
+    },
+    "empty": "No entities",
+    "detail": {
+      "title": "Entity details",
+      "relationships": "Relationships",
+      "noRelationships": "No relationships",
+      "direction": {
+        "incoming": "incoming",
+        "outgoing": "outgoing"
+      }
+    }
+  },
+  "agents": {
+    "title": "Agent profiles",
+    "personality": "Personality",
+    "stance": "Stance",
+    "memory": "Memory",
+    "platform": "Platform",
+    "empty": "Profiles will be generated after launch",
+    "loading": "Generating agent profiles..."
+  },
+  "parameters": {
+    "title": "Simulation parameters",
+    "summary": {
+      "agents": "Agents",
+      "rounds": "Rounds",
+      "platforms": "Platforms"
+    },
+    "adjust": "Adjust",
+    "agentCount": "Number of agents",
+    "maxRounds": "Maximum rounds",
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "platformError": "Select at least one platform"
+  },
+  "launch": {
+    "button": "Launch simulation",
+    "confirm": {
+      "title": "Launch confirmation",
+      "description": "Are you sure you want to launch the simulation with these parameters?",
+      "action": "Launch",
+      "cancel": "Cancel"
+    }
+  }
+}

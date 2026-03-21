@@ -1,0 +1,61 @@
+{
+  "tabs": {
+    "entities": "Encje",
+    "agents": "Agenci",
+    "parameters": "Parametry"
+  },
+  "entities": {
+    "title": "Encje i relacje",
+    "columns": {
+      "name": "Nazwa",
+      "type": "Typ",
+      "relationships": "Relacje"
+    },
+    "filter": {
+      "all": "Wszystkie typy",
+      "placeholder": "Filtruj po typie..."
+    },
+    "empty": "Brak encji",
+    "detail": {
+      "title": "Szczegoly encji",
+      "relationships": "Relacje",
+      "noRelationships": "Brak relacji",
+      "direction": {
+        "incoming": "przychodzaca",
+        "outgoing": "wychodzaca"
+      }
+    }
+  },
+  "agents": {
+    "title": "Profile agentow",
+    "personality": "Osobowosc",
+    "stance": "Stanowisko",
+    "memory": "Pamiec",
+    "platform": "Platforma",
+    "empty": "Profile zostana wygenerowane po uruchomieniu",
+    "loading": "Generowanie profili agentow..."
+  },
+  "parameters": {
+    "title": "Parametry symulacji",
+    "summary": {
+      "agents": "Agenci",
+      "rounds": "Rundy",
+      "platforms": "Platformy"
+    },
+    "adjust": "Dostosuj",
+    "agentCount": "Liczba agentow",
+    "maxRounds": "Maksymalna liczba rund",
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "platformError": "Wybierz co najmniej jedna platforme"
+  },
+  "launch": {
+    "button": "Uruchom symulacje",
+    "confirm": {
+      "title": "Potwierdzenie uruchomienia",
+      "description": "Czy na pewno chcesz uruchomic symulacje z ponizszymi parametrami?",
+      "action": "Uruchom",
+      "cancel": "Anuluj"
+    }
+  }
+}
