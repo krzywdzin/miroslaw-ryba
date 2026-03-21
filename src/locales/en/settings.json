@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Settings",
+  "pageSubtitle": "Configure API connection, models, and simulation parameters",
+  "nav": {
+    "apiKeys": "API Keys",
+    "modelSelection": "Model Selection",
+    "simulation": "Simulation Parameters",
+    "zepCloud": "Zep Cloud",
+    "docker": "Docker"
+  },
+  "sections": {
+    "apiKeys": {
+      "heading": "API Keys",
+      "llmApiKey": "API Key",
+      "llmBaseUrl": "API Base URL"
+    },
+    "model": {
+      "heading": "Model Selection",
+      "model": "Model",
+      "customModelName": "Custom model name",
+      "customModelPlaceholder": "e.g. gpt-4-turbo",
+      "customOption": "Custom...",
+      "boostHeading": "Boost Model (optional)",
+      "boostDescription": "Second LLM model used to boost predictions",
+      "boostApiKey": "API Key (boost)",
+      "boostBaseUrl": "API Base URL (boost)",
+      "boostModel": "Boost Model"
+    },
+    "simulation": {
+      "heading": "Simulation Parameters",
+      "agentCount": "Agent count",
+      "maxRounds": "Number of rounds",
+      "platforms": "Platforms",
+      "twitter": "Twitter platform",
+      "reddit": "Reddit platform",
+      "platformError": "Select at least one platform"
+    },
+    "zep": {
+      "heading": "Zep Cloud",
+      "apiKey": "Zep API Key",
+      "cloudUrl": "Zep Cloud URL"
+    },
+    "docker": {
+      "heading": "Docker"
+    }
+  },
+  "actions": {
+    "test": "Test",
+    "testConnection": "Test connection",
+    "startBackend": "Start backend",
+    "stopBackend": "Stop backend",
+    "restart": "Restart",
+    "start": "Start",
+    "stop": "Stop"
+  },
+  "connectionTest": {
+    "llmSuccess": "Connected -- model responding correctly",
+    "llmFailAuth": "Invalid API key",
+    "llmFailNetwork": "Could not connect to API server",
+    "llmFailModel": "Model unavailable",
+    "zepSuccess": "Connected to Zep Cloud",
+    "zepSuccessDetail": "Memory count: {{count}}",
+    "zepFailAuth": "Invalid Zep API key",
+    "zepFailNetwork": "Could not connect to Zep Cloud"
+  },
+  "feedback": {
+    "saved": "Saved",
+    "saveFailed": "Could not save settings"
+  },
+  "errors": {
+    "llmTestFailed": "Connection test failed. Check API key and URL.",
+    "zepTestFailed": "Could not connect to Zep Cloud. Check credentials.",
+    "dockerActionFailed": "Could not {{action}} container {{name}}",
+    "dockerProxyUnreachable": "Docker proxy is not available. Check server configuration."
+  },
+  "docker": {
+    "noContainers": "No containers found",
+    "noContainersBody": "Make sure Docker is running and docker-compose.yml exists",
+    "noLogs": "No logs available",
+    "unavailable": "Docker is not available",
+    "unavailableBody": "Check if Docker Desktop is running"
+  },
+  "confirmation": {
+    "areYouSure": "Are you sure?"
+  }
+}

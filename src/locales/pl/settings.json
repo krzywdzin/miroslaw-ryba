@@ -1,0 +1,86 @@
+{
+  "pageTitle": "Ustawienia",
+  "pageSubtitle": "Skonfiguruj polaczenie z API, modele i parametry symulacji",
+  "nav": {
+    "apiKeys": "Klucze API",
+    "modelSelection": "Wybor modelu",
+    "simulation": "Parametry symulacji",
+    "zepCloud": "Zep Cloud",
+    "docker": "Docker"
+  },
+  "sections": {
+    "apiKeys": {
+      "heading": "Klucze API",
+      "llmApiKey": "Klucz API",
+      "llmBaseUrl": "Adres bazowy API"
+    },
+    "model": {
+      "heading": "Wybor modelu",
+      "model": "Model",
+      "customModelName": "Nazwa wlasnego modelu",
+      "customModelPlaceholder": "np. gpt-4-turbo",
+      "customOption": "Wlasny...",
+      "boostHeading": "Model boost (opcjonalnie)",
+      "boostDescription": "Drugi model LLM uzywany do wzmocnienia predykcji",
+      "boostApiKey": "Klucz API (boost)",
+      "boostBaseUrl": "Adres bazowy API (boost)",
+      "boostModel": "Model boost"
+    },
+    "simulation": {
+      "heading": "Parametry symulacji",
+      "agentCount": "Liczba agentow",
+      "maxRounds": "Liczba rund",
+      "platforms": "Platformy",
+      "twitter": "Platforma Twitter",
+      "reddit": "Platforma Reddit",
+      "platformError": "Wybierz co najmniej jedna platforme"
+    },
+    "zep": {
+      "heading": "Zep Cloud",
+      "apiKey": "Klucz API Zep",
+      "cloudUrl": "Adres Zep Cloud"
+    },
+    "docker": {
+      "heading": "Docker"
+    }
+  },
+  "actions": {
+    "test": "Testuj",
+    "testConnection": "Testuj polaczenie",
+    "startBackend": "Uruchom backend",
+    "stopBackend": "Zatrzymaj backend",
+    "restart": "Uruchom ponownie",
+    "start": "Uruchom",
+    "stop": "Zatrzymaj"
+  },
+  "connectionTest": {
+    "llmSuccess": "Polaczono -- model odpowiada prawidlowo",
+    "llmFailAuth": "Nieprawidlowy klucz API",
+    "llmFailNetwork": "Nie udalo sie polaczyc z serwerem API",
+    "llmFailModel": "Model niedostepny",
+    "zepSuccess": "Polaczono z Zep Cloud",
+    "zepSuccessDetail": "Liczba pamieci: {{count}}",
+    "zepFailAuth": "Nieprawidlowy klucz API Zep",
+    "zepFailNetwork": "Nie udalo sie polaczyc z Zep Cloud"
+  },
+  "feedback": {
+    "saved": "Zapisano",
+    "saveFailed": "Nie udalo sie zapisac ustawien"
+  },
+  "errors": {
+    "llmTestFailed": "Nie udalo sie przetestowac polaczenia. Sprawdz klucz API i adres URL.",
+    "zepTestFailed": "Nie udalo sie polaczyc z Zep Cloud. Sprawdz dane uwierzytelniajace.",
+    "dockerActionFailed": "Nie udalo sie {{action}} kontenera {{name}}",
+    "dockerProxyUnreachable": "Proxy Docker nie jest dostepny. Sprawdz konfiguracje serwera."
+  },
+  "docker": {
+    "noContainers": "Nie znaleziono kontenerow",
+    "noContainersBody": "Upewnij sie, ze Docker jest uruchomiony i docker-compose.yml istnieje",
+    "noLogs": "Brak logow",
+    "unavailable": "Docker nie jest dostepny",
+    "unavailableBody": "Sprawdz, czy Docker Desktop jest uruchomiony"
+  },
+  "confirmation": {
+    "areYouSure": "Na pewno?"
+  }
+}
