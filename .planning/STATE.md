@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: in_progress
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-21T13:40:36Z"
-last_activity: 2026-03-21 -- Completed 05-01 Environment foundation
+status: completed
+stopped_at: Completed 05-02-PLAN.md
+last_updated: "2026-03-21T14:02:28.101Z"
+last_activity: 2026-03-21 -- Completed 05-02 Agent cards, parameter form, launch flow
 progress:
   total_phases: 10
-  completed_phases: 4
-  total_plans: 9
-  completed_plans: 10
+  completed_phases: 5
+  total_plans: 11
+  completed_plans: 11
   percent: 100
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Users can interact with the full MiroFish prediction pipeline in a clean, Polish-language interface with complete system configurability.
-**Current focus:** Phase 5 -- Environment Setup (IN PROGRESS)
+**Current focus:** Phase 5 -- Environment Setup (COMPLETE)
 
 ## Current Position
 
 Phase: 5 of 10 (Environment Setup)
-Plan: 1 of 2 in current phase
-Status: Plan 05-01 complete, ready for 05-02
-Last activity: 2026-03-21 -- Completed 05-01 Environment foundation
+Plan: 2 of 2 in current phase
+Status: Phase 05 complete, ready for Phase 06
+Last activity: 2026-03-21 -- Completed 05-02 Agent cards, parameter form, launch flow
 
 Progress: [██████████] 100%
 
@@ -54,6 +54,7 @@ Progress: [██████████] 100%
 - Trend: stable
 
 *Updated after each plan completion*
+| Phase 05 P02 | 3min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -95,6 +96,9 @@ Recent decisions affecting current work:
 - [05-01]: Inline Array.sort/filter for entity table instead of @tanstack/react-table hooks (simpler for 3 cols)
 - [05-01]: Entity relationship counts as optional prop since EntitySchema lacks relationship data
 - [05-01]: EntityDetailPanel reuses NodeDetailPanel Sheet pattern with relationship list
+- [Phase 05]: Parameter overrides stored in local React state, never written back to config store
+- [Phase 05]: Auto-prepare creates simulation and generates agent profiles on page mount
+- [Phase 05]: Route guard redirects to /graph if graph not completed
 
 ### Pending Todos
 
@@ -108,6 +112,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T13:40:36Z
-Stopped at: Completed 05-01-PLAN.md
-Resume file: .planning/phases/05-environment-setup/05-01-SUMMARY.md
+Last session: 2026-03-21T14:02:28.099Z
+Stopped at: Completed 05-02-PLAN.md
+Resume file: None

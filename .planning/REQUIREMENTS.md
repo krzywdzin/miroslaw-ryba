@@ -26,9 +26,9 @@
 ### Pipeline — Environment Setup
 
 - [x] **ENVR-01**: User can view extracted entities and relationships from the graph
-- [ ] **ENVR-02**: User can view generated character profiles (personality, memory, stance)
-- [ ] **ENVR-03**: User can view and adjust simulation parameters before running
-- [ ] **ENVR-04**: User can see agent profile cards with personality traits, memory state, and opinion timeline
+- [x] **ENVR-02**: User can view generated character profiles (personality, memory, stance)
+- [x] **ENVR-03**: User can view and adjust simulation parameters before running
+- [x] **ENVR-04**: User can see agent profile cards with personality traits, memory state, and opinion timeline
 
 ### Pipeline — Simulation
 
@@ -147,9 +147,9 @@
 | GRPH-04 | Phase 4 | Complete |
 | GRPH-05 | Phase 4 | Complete |
 | ENVR-01 | Phase 5 | Complete |
-| ENVR-02 | Phase 5 | Pending |
-| ENVR-03 | Phase 5 | Pending |
-| ENVR-04 | Phase 5 | Pending |
+| ENVR-02 | Phase 5 | Complete |
+| ENVR-03 | Phase 5 | Complete |
+| ENVR-04 | Phase 5 | Complete |
 | SIMU-01 | Phase 6 | Pending |
 | SIMU-02 | Phase 6 | Pending |
 | SIMU-03 | Phase 6 | Pending |
