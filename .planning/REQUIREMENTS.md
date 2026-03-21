@@ -56,7 +56,7 @@
 - [x] **I18N-01**: All UI strings externalized via i18n framework (react-i18next)
 - [x] **I18N-02**: Polish language as default with complete translations
 - [ ] **I18N-03**: English language available via language switcher in header
-- [ ] **I18N-04**: Polish plural forms handled correctly (4 plural forms via ICU MessageFormat)
+- [x] **I18N-04**: Polish plural forms handled correctly (4 plural forms via ICU MessageFormat)
 
 ### UI/UX
 
@@ -64,10 +64,10 @@
 - [ ] **UIUX-02**: 5-stage pipeline displayed as linear stepper/wizard navigation
 - [ ] **UIUX-03**: Responsive layout — desktop-first, graceful degradation to tablet (min 1024px)
 - [ ] **UIUX-04**: Dark mode with OS preference detection and manual toggle
-- [ ] **UIUX-05**: Consistent loading states (skeletons, spinners, progress bars) for all async operations
-- [ ] **UIUX-06**: Clear error messages with retry buttons for common failures (invalid API key, timeout, model unavailable)
+- [x] **UIUX-05**: Consistent loading states (skeletons, spinners, progress bars) for all async operations
+- [x] **UIUX-06**: Clear error messages with retry buttons for common failures (invalid API key, timeout, model unavailable)
 - [ ] **UIUX-07**: Keyboard shortcuts for common actions (chat focus, simulation start/stop, panel switching)
-- [ ] **UIUX-08**: Chinese backend error messages intercepted and mapped to Polish/English equivalents
+- [x] **UIUX-08**: Chinese backend error messages intercepted and mapped to Polish/English equivalents
 
 ### Infrastructure
 
@@ -127,13 +127,13 @@
 | I18N-01 | Phase 2 | Complete |
 | I18N-02 | Phase 2 | Complete |
 | I18N-03 | Phase 2 | Pending |
-| I18N-04 | Phase 2 | Pending |
+| I18N-04 | Phase 2 | Complete |
 | UIUX-01 | Phase 2 | Complete |
 | UIUX-02 | Phase 2 | Pending |
 | UIUX-03 | Phase 2 | Pending |
-| UIUX-05 | Phase 2 | Pending |
-| UIUX-06 | Phase 2 | Pending |
-| UIUX-08 | Phase 2 | Pending |
+| UIUX-05 | Phase 2 | Complete |
+| UIUX-06 | Phase 2 | Complete |
+| UIUX-08 | Phase 2 | Complete |
 | CONF-01 | Phase 3 | Pending |
 | CONF-02 | Phase 3 | Pending |
 | CONF-03 | Phase 3 | Pending |
