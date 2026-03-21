@@ -1,0 +1,17 @@
+{
+  "dashboard": "Dashboard",
+  "stage1": "Graph Construction",
+  "stage2": "Environment",
+  "stage3": "Simulation",
+  "stage4": "Report",
+  "stage5": "Dialogue",
+  "settings": "Settings",
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "status": {
+    "completed": "Completed",
+    "current": "Current",
+    "locked": "Locked"
+  }
+}

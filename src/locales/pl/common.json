@@ -1,0 +1,22 @@
+{
+  "appTitle": "Miroslaw Ryba",
+  "retry": "Spróbuj ponownie",
+  "loading": "Ładowanie...",
+  "connected": "Połączony",
+  "disconnected": "Rozłączony",
+  "settings": "Ustawienia",
+  "language": "Język",
+  "save": "Zapisz",
+  "cancel": "Anuluj",
+  "close": "Zamknij",
+  "back": "Wstecz",
+  "next": "Dalej",
+  "simulation_one": "{{count}} symulacja",
+  "simulation_few": "{{count}} symulacje",
+  "simulation_many": "{{count}} symulacji",
+  "simulation_other": "{{count}} symulacji",
+  "agent_one": "{{count}} agent",
+  "agent_few": "{{count}} agenty",
+  "agent_many": "{{count}} agentów",
+  "agent_other": "{{count}} agentów"
+}

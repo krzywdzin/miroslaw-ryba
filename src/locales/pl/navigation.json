@@ -1,0 +1,17 @@
+{
+  "dashboard": "Panel główny",
+  "stage1": "Budowa grafu",
+  "stage2": "Środowisko",
+  "stage3": "Symulacja",
+  "stage4": "Raport",
+  "stage5": "Dialog",
+  "settings": "Ustawienia",
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "status": {
+    "completed": "Ukończony",
+    "current": "Bieżący",
+    "locked": "Zablokowany"
+  }
+}

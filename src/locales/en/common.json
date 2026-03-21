@@ -1,0 +1,18 @@
+{
+  "appTitle": "Miroslaw Ryba",
+  "retry": "Try again",
+  "loading": "Loading...",
+  "connected": "Connected",
+  "disconnected": "Disconnected",
+  "settings": "Settings",
+  "language": "Language",
+  "save": "Save",
+  "cancel": "Cancel",
+  "close": "Close",
+  "back": "Back",
+  "next": "Next",
+  "simulation_one": "{{count}} simulation",
+  "simulation_other": "{{count}} simulations",
+  "agent_one": "{{count}} agent",
+  "agent_other": "{{count}} agents"
+}

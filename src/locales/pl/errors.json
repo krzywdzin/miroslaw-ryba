@@ -1,0 +1,16 @@
+{
+  "networkError": "Błąd połączenia z serwerem. Ponowna próba...",
+  "networkErrorFinal": "Nie udało się połączyć z serwerem.",
+  "unknown": "Wystąpił nieoczekiwany błąd.",
+  "timeout": "Żądanie przekroczyło limit czasu.",
+  "notFound": "Nie znaleziono zasobu.",
+  "serverError": "Wewnętrzny błąd serwera.",
+  "invalidApiKey": "Nieprawidłowy klucz API.",
+  "modelUnavailable": "Model jest niedostępny.",
+  "projectNotExist": "Projekt nie istnieje.",
+  "taskNotExist": "Zadanie nie istnieje.",
+  "uploadFailed": "Przesyłanie pliku nie powiodło się.",
+  "invalidParams": "Błąd parametrów.",
+  "simulationNotExist": "Symulacja nie istnieje.",
+  "reportNotExist": "Raport nie istnieje."
+}

@@ -1,0 +1,15 @@
+{
+  "heading": "Welcome to Miroslaw Ryba",
+  "subheading": "Multi-agent simulation-based prediction system",
+  "quickStart": "Start prediction",
+  "systemStatus": "System status",
+  "recentSimulations": "Recent simulations",
+  "emptyState": {
+    "heading": "No simulations",
+    "body": "No simulations yet. Click \"Start prediction\" to begin."
+  },
+  "backendStatus": {
+    "connected": "Backend connected",
+    "disconnected": "Backend disconnected"
+  }
+}

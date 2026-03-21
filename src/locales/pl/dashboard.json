@@ -1,0 +1,15 @@
+{
+  "heading": "Witaj w Miroslaw Ryba",
+  "subheading": "System predykcji oparty na symulacji wieloagentowej",
+  "quickStart": "Rozpocznij predykcję",
+  "systemStatus": "Status systemu",
+  "recentSimulations": "Ostatnie symulacje",
+  "emptyState": {
+    "heading": "Brak symulacji",
+    "body": "Nie przeprowadzono jeszcze żadnej symulacji. Kliknij \"Rozpocznij predykcję\", aby zacząć."
+  },
+  "backendStatus": {
+    "connected": "Backend połączony",
+    "disconnected": "Backend rozłączony"
+  }
+}

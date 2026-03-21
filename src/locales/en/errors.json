@@ -1,0 +1,16 @@
+{
+  "networkError": "Server connection error. Retrying...",
+  "networkErrorFinal": "Could not connect to server.",
+  "unknown": "An unexpected error occurred.",
+  "timeout": "Request timed out.",
+  "notFound": "Resource not found.",
+  "serverError": "Internal server error.",
+  "invalidApiKey": "Invalid API key.",
+  "modelUnavailable": "Model is unavailable.",
+  "projectNotExist": "Project does not exist.",
+  "taskNotExist": "Task does not exist.",
+  "uploadFailed": "File upload failed.",
+  "invalidParams": "Invalid parameters.",
+  "simulationNotExist": "Simulation does not exist.",
+  "reportNotExist": "Report does not exist."
+}
