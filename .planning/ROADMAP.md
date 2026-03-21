@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Infrastructure and API Foundation** - Project scaffold, backend deployment, typed API client with Zod contracts (completed 2026-03-20)
 - [x] **Phase 2: App Shell and Cross-Cutting Concerns** - i18n framework, stepper layout, loading/error patterns, responsive design (completed 2026-03-21)
 - [x] **Phase 3: Configuration Panel** - API keys, model selection, simulation parameters, Zep Cloud, Docker status (completed 2026-03-21)
-- [ ] **Phase 4: Graph Construction** - Pipeline stage 1: seed upload, graph building progress, knowledge graph visualization
+- [x] **Phase 4: Graph Construction** - Pipeline stage 1: seed upload, graph building progress, knowledge graph visualization (completed 2026-03-21)
 - [ ] **Phase 5: Environment Setup** - Pipeline stage 2: entities, relationships, agent profiles, parameter adjustment
 - [ ] **Phase 6: Simulation** - Pipeline stage 3: real-time monitoring, dual-platform view, agent activity, timeline
 - [ ] **Phase 7: Reports** - Pipeline stage 4: markdown report display, PDF/Markdown export, simulation history
@@ -183,7 +183,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 1. Infrastructure and API Foundation | 2/2 | Complete    | 2026-03-20 |
 | 2. App Shell and Cross-Cutting Concerns | 2/3 | Complete    | 2026-03-21 |
 | 3. Configuration Panel | 0/2 | Complete    | 2026-03-21 |
-| 4. Graph Construction | 1/2 | In Progress|  |
+| 4. Graph Construction | 2/2 | Complete   | 2026-03-21 |
 | 5. Environment Setup | 0/? | Not started | - |
 | 6. Simulation | 0/? | Not started | - |
 | 7. Reports | 0/? | Not started | - |

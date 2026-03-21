@@ -20,8 +20,8 @@
 - [x] **GRPH-01**: User can upload seed material files via drag-and-drop or file picker
 - [x] **GRPH-02**: User can describe prediction goal in natural language text input
 - [x] **GRPH-03**: User can see graph construction progress with status messages
-- [ ] **GRPH-04**: User can view interactive knowledge graph visualization (zoom, pan, filter by entity type)
-- [ ] **GRPH-05**: User can click graph nodes to inspect entity details
+- [x] **GRPH-04**: User can view interactive knowledge graph visualization (zoom, pan, filter by entity type)
+- [x] **GRPH-05**: User can click graph nodes to inspect entity details
 
 ### Pipeline — Environment Setup
 
@@ -144,8 +144,8 @@
 | GRPH-01 | Phase 4 | Complete |
 | GRPH-02 | Phase 4 | Complete |
 | GRPH-03 | Phase 4 | Complete |
-| GRPH-04 | Phase 4 | Pending |
-| GRPH-05 | Phase 4 | Pending |
+| GRPH-04 | Phase 4 | Complete |
+| GRPH-05 | Phase 4 | Complete |
 | ENVR-01 | Phase 5 | Pending |
 | ENVR-02 | Phase 5 | Pending |
 | ENVR-03 | Phase 5 | Pending |

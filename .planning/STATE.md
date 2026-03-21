@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-21T12:31:41Z"
-last_activity: 2026-03-21 -- Completed 04-01 Graph upload pipeline
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-21T12:38:54Z"
+last_activity: 2026-03-21 -- Completed 04-02 Graph visualization
 progress:
   total_phases: 10
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 9
-  completed_plans: 8
-  percent: 89
+  completed_plans: 9
+  percent: 100
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Users can interact with the full MiroFish prediction pipeline in a clean, Polish-language interface with complete system configurability.
-**Current focus:** Phase 4 -- Graph Construction (Plan 01 complete, Plan 02 next)
+**Current focus:** Phase 4 -- Graph Construction (COMPLETE)
 
 ## Current Position
 
-Phase: 4 of 10 (Graph Construction) -- IN PROGRESS
-Plan: 1 of 2 in current phase
-Status: Plan 04-01 complete, ready for 04-02
-Last activity: 2026-03-21 -- Completed 04-01 Graph upload pipeline
+Phase: 4 of 10 (Graph Construction) -- COMPLETE
+Plan: 2 of 2 in current phase (all plans complete)
+Status: Phase 04 complete, ready for Phase 05
+Last activity: 2026-03-21 -- Completed 04-02 Graph visualization
 
-Progress: [█████████░] 89%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
@@ -46,11 +46,11 @@ Progress: [█████████░] 89%
 | 01 | 2/2 | 15min | 8min |
 | 02 | 3/3 | 18min | 6min |
 | 03 | 2/2 | 11min | 6min |
-| 04 | 1/2 | 26min | 26min |
+| 04 | 2/2 | 30min | 15min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (2min), 02-03 (3min), 03-01 (6min), 03-02 (5min), 04-01 (26min)
-- Trend: stable (04-01 larger scope with deps install)
+- Last 5 plans: 02-03 (3min), 03-01 (6min), 03-02 (5min), 04-01 (26min), 04-02 (4min)
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -88,6 +88,9 @@ Recent decisions affecting current work:
 - [04-01]: File objects stored in component state, not Zustand (not serializable for persist)
 - [04-01]: useBuildStatus wraps usePollingQuery at 2s interval with completed/failed terminal states
 - [04-01]: statusToStep mapping exported from BuildProgress for reuse in view page
+- [04-02]: Reagraph labelType=auto provides tooltip-like hover behavior, no custom tooltip needed
+- [04-02]: Filter state in local React state (not Zustand) -- ephemeral per-session
+- [04-02]: Graph data staleTime=Infinity since constructed graph data is immutable
 
 ### Pending Todos
 
@@ -101,6 +104,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T12:31:41Z
-Stopped at: Completed 04-01-PLAN.md
-Resume file: .planning/phases/04-graph-construction/04-01-SUMMARY.md
+Last session: 2026-03-21T12:38:54Z
+Stopped at: Completed 04-02-PLAN.md
+Resume file: .planning/phases/04-graph-construction/04-02-SUMMARY.md
