@@ -2,10 +2,10 @@ import { useEffect, useCallback, useRef } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslation } from 'react-i18next'
-import { Key, CheckCircle, XCircle, Loader2 } from 'lucide-react'
+import { Cloud, CheckCircle, XCircle, Loader2 } from 'lucide-react'
 import { toast } from 'sonner'
 
-import { apiKeysSchema, type ApiKeysFormValues } from '../schemas/config.schema'
+import { zepSchema, type ZepFormValues } from '../schemas/config.schema'
 import { useConfigStore } from '../hooks/useConfigStore'
 import { useConnectionTest } from '../hooks/useConnectionTest'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
@@ -20,24 +20,29 @@ import {
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 
-export function ApiKeysSection() {
+interface ZepTestResult {
+  sessionCount: number
+}
+
+export function ZepSection() {
   const { t } = useTranslation('settings')
   const config = useConfigStore()
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  const form = useForm<ApiKeysFormValues>({
-    resolver: zodResolver(apiKeysSchema),
+  const form = useForm<ZepFormValues>({
+    resolver: zodResolver(zepSchema),
     defaultValues: {
-      llmApiKey: config.llmApiKey,
-      llmBaseUrl: config.llmBaseUrl,
+      zepApiKey: config.zepApiKey,
+      zepCloudUrl: config.zepCloudUrl,
     },
     mode: 'onBlur',
   })
 
-  // Auto-save on valid changes (debounced 500ms)
   const watchedValues = form.watch()
+
+  // Auto-save on valid changes (debounced 500ms)
   const saveConfig = useCallback(
-    (values: ApiKeysFormValues) => {
+    (values: ZepFormValues) => {
       config.setConfig(values)
       toast.success(t('feedback.saved'), { duration: 1500 })
     },
@@ -56,26 +61,24 @@ export function ApiKeysSection() {
     }
   }, [watchedValues, form.formState.isValid, form.formState.isDirty, saveConfig])
 
-  // Connection test using shared hook
-  const connectionTest = useConnectionTest(async () => {
+  // Connection test
+  const connectionTest = useConnectionTest<ZepTestResult>(async () => {
     const values = form.getValues()
-    const response = await fetch(`${values.llmBaseUrl}/chat/completions`, {
-      method: 'POST',
+    const url = values.zepCloudUrl || 'https://api.getzep.com'
+    const response = await fetch(`${url}/api/v2/sessions`, {
       headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${values.llmApiKey}`,
+        Authorization: `Api-Key ${values.zepApiKey}`,
       },
-      body: JSON.stringify({
-        model: config.llmModel,
-        messages: [{ role: 'user', content: 'Say "ok"' }],
-        max_tokens: 5,
-      }),
     })
     if (!response.ok) {
-      const text = await response.text()
-      throw new Error(text)
+      if (response.status === 401) {
+        throw new Error('auth')
+      }
+      throw new Error('network')
     }
-    return response.json()
+    const data = await response.json()
+    const sessionCount = Array.isArray(data) ? data.length : 0
+    return { sessionCount }
   })
 
   // Reset test result when inputs change
@@ -84,16 +87,16 @@ export function ApiKeysSection() {
       connectionTest.reset()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [watchedValues.llmApiKey, watchedValues.llmBaseUrl])
+  }, [watchedValues.zepApiKey, watchedValues.zepCloudUrl])
 
   return (
-    <section id="api-keys">
+    <section id="zep-cloud">
       <Card>
         <CardHeader>
           <div className="flex items-center gap-2">
-            <Key className="h-5 w-5 text-muted-foreground" />
+            <Cloud className="h-5 w-5 text-muted-foreground" />
             <h2 className="text-[22px] font-semibold">
-              {t('sections.apiKeys.heading')}
+              {t('sections.zep.heading')}
             </h2>
           </div>
         </CardHeader>
@@ -102,16 +105,16 @@ export function ApiKeysSection() {
             <form className="space-y-4">
               <FormField
                 control={form.control}
-                name="llmApiKey"
+                name="zepApiKey"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{t('sections.apiKeys.llmApiKey')}</FormLabel>
+                    <FormLabel>{t('sections.zep.apiKey')}</FormLabel>
                     <div className="flex gap-2">
                       <FormControl>
                         <Input
                           {...field}
                           className="font-mono text-[13px]"
-                          placeholder="sk-..."
+                          placeholder="z_..."
                         />
                       </FormControl>
                       <Button
@@ -120,27 +123,36 @@ export function ApiKeysSection() {
                         onClick={() => connectionTest.test()}
                         disabled={
                           connectionTest.isPending ||
-                          !form.getValues('llmApiKey')
+                          !form.getValues('zepApiKey')
                         }
                       >
                         {connectionTest.isPending ? (
                           <Loader2 className="h-4 w-4 animate-spin" />
                         ) : (
-                          t('actions.test')
+                          t('actions.testConnection')
                         )}
                       </Button>
                     </div>
                     <FormMessage />
-                    {connectionTest.isSuccess && (
-                      <div className="mt-2 flex items-center gap-1.5 text-[13px] text-[hsl(142_71%_45%)] animate-in fade-in slide-in-from-top-1 duration-200">
-                        <CheckCircle className="h-4 w-4" />
-                        {t('connectionTest.llmSuccess')}
+                    {connectionTest.isSuccess && connectionTest.data && (
+                      <div className="mt-2 rounded-md border-l-[3px] border-[hsl(142_71%_45%)] bg-white p-4 animate-in fade-in slide-in-from-top-1 duration-200">
+                        <div className="flex items-center gap-1.5 text-[13px] text-[hsl(142_71%_45%)]">
+                          <CheckCircle className="h-4 w-4" />
+                          {t('connectionTest.zepSuccess')}
+                        </div>
+                        <p className="mt-1 text-[13px] text-muted-foreground">
+                          {t('connectionTest.zepSuccessDetail', {
+                            count: connectionTest.data.sessionCount,
+                          })}
+                        </p>
                       </div>
                     )}
                     {connectionTest.isError && (
                       <div className="mt-2 flex items-center gap-1.5 text-[13px] text-destructive animate-in fade-in slide-in-from-top-1 duration-200">
                         <XCircle className="h-4 w-4" />
-                        {t('errors.llmTestFailed')}
+                        {connectionTest.error?.message === 'auth'
+                          ? t('connectionTest.zepFailAuth')
+                          : t('connectionTest.zepFailNetwork')}
                       </div>
                     )}
                   </FormItem>
@@ -149,15 +161,15 @@ export function ApiKeysSection() {
 
               <FormField
                 control={form.control}
-                name="llmBaseUrl"
+                name="zepCloudUrl"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{t('sections.apiKeys.llmBaseUrl')}</FormLabel>
+                    <FormLabel>{t('sections.zep.cloudUrl')}</FormLabel>
                     <FormControl>
                       <Input
                         {...field}
                         type="url"
-                        placeholder="https://..."
+                        placeholder="https://api.getzep.com"
                       />
                     </FormControl>
                     <FormMessage />

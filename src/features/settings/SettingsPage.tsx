@@ -3,6 +3,7 @@ import { SectionNav } from './components/SectionNav'
 import { ApiKeysSection } from './components/ApiKeysSection'
 import { ModelSection } from './components/ModelSection'
 import { SimulationSection } from './components/SimulationSection'
+import { ZepSection } from './components/ZepSection'
 
 export function SettingsPage() {
   const { t } = useTranslation('settings')
@@ -25,6 +26,7 @@ export function SettingsPage() {
           <ApiKeysSection />
           <ModelSection />
           <SimulationSection />
+          <ZepSection />
         </div>
       </div>
     </div>
