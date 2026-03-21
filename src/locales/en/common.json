@@ -14,5 +14,9 @@
   "simulation_one": "{{count}} simulation",
   "simulation_other": "{{count}} simulations",
   "agent_one": "{{count}} agent",
-  "agent_other": "{{count}} agents"
+  "agent_other": "{{count}} agents",
+  "agplNote": "AGPL-3.0 License",
+  "pipeline": "Pipeline",
+  "settingsComingSoon": "Configuration available in Phase 3",
+  "minScreenWidth": "This application requires a screen width of at least 1024px"
 }

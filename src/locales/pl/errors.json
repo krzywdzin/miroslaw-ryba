@@ -12,5 +12,7 @@
   "uploadFailed": "Przesyłanie pliku nie powiodło się.",
   "invalidParams": "Błąd parametrów.",
   "simulationNotExist": "Symulacja nie istnieje.",
-  "reportNotExist": "Raport nie istnieje."
+  "reportNotExist": "Raport nie istnieje.",
+  "pageNotFound": "Nie znaleziono strony",
+  "returnHome": "Wróć do strony głównej"
 }

@@ -12,5 +12,7 @@
   "uploadFailed": "File upload failed.",
   "invalidParams": "Invalid parameters.",
   "simulationNotExist": "Simulation does not exist.",
-  "reportNotExist": "Report does not exist."
+  "reportNotExist": "Report does not exist.",
+  "pageNotFound": "Page not found",
+  "returnHome": "Return to home"
 }

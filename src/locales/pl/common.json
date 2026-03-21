@@ -18,5 +18,9 @@
   "agent_one": "{{count}} agent",
   "agent_few": "{{count}} agenty",
   "agent_many": "{{count}} agentów",
-  "agent_other": "{{count}} agentów"
+  "agent_other": "{{count}} agentów",
+  "agplNote": "Licencja AGPL-3.0",
+  "pipeline": "Pipeline",
+  "settingsComingSoon": "Konfiguracja dostępna w Fazie 3",
+  "minScreenWidth": "Ta aplikacja wymaga ekranu o szerokości co najmniej 1024px"
 }
