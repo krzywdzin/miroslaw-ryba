@@ -112,11 +112,11 @@ Plans:
   2. User can view a dual-platform split view showing Twitter-like and Reddit-like simulations running in parallel
   3. User can see agent posts, comments, and debates appearing in real time via polling
   4. User can view an action timeline showing key events during the simulation
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md — Simulation store, polling hooks (run status/actions/timeline), utility hooks (elapsed time, scroll anchor), i18n simulation namespace
+- [ ] 06-02-PLAN.md — Three-column layout (Twitter/Reddit/Timeline), progress bar, PostCard, feed components, EventTimeline, route registration
 
 ### Phase 7: Reports
 **Goal**: Users can view, export, and browse prediction reports, completing pipeline stage 4
@@ -186,7 +186,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 3. Configuration Panel | 0/2 | Complete    | 2026-03-21 |
 | 4. Graph Construction | 2/2 | Complete    | 2026-03-21 |
 | 5. Environment Setup | 0/2 | Not started | - |
-| 6. Simulation | 0/? | Not started | - |
+| 6. Simulation | 0/2 | Not started | - |
 | 7. Reports | 0/? | Not started | - |
 | 8. Interactive Dialogue | 0/? | Not started | - |
 | 9. Polish and Differentiation | 0/? | Not started | - |
