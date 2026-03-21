@@ -97,10 +97,11 @@ Plans:
   2. User can view generated character profiles with personality traits, memory state, and stance
   3. User can review and adjust simulation parameters before running the simulation
   4. User can see agent profile cards with personality, memory, and opinion timeline
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — Environment store, data hooks, Table/AlertDialog UI primitives, entity table with sort/filter/detail panel, i18n, routing
+- [ ] 05-02-PLAN.md — Agent profile cards grid, parameter summary + override form, launch confirmation dialog, tab-based EnvironmentPage composition
 
 ### Phase 6: Simulation
 **Goal**: Users can run and monitor the dual-platform simulation in real time, completing pipeline stage 3
@@ -184,7 +185,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 2. App Shell and Cross-Cutting Concerns | 2/3 | Complete    | 2026-03-21 |
 | 3. Configuration Panel | 0/2 | Complete    | 2026-03-21 |
 | 4. Graph Construction | 2/2 | Complete    | 2026-03-21 |
-| 5. Environment Setup | 0/? | Not started | - |
+| 5. Environment Setup | 0/2 | Not started | - |
 | 6. Simulation | 0/? | Not started | - |
 | 7. Reports | 0/? | Not started | - |
 | 8. Interactive Dialogue | 0/? | Not started | - |
