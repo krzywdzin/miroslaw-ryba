@@ -4,6 +4,7 @@ import { ApiKeysSection } from './components/ApiKeysSection'
 import { ModelSection } from './components/ModelSection'
 import { SimulationSection } from './components/SimulationSection'
 import { ZepSection } from './components/ZepSection'
+import { DockerSection } from './components/DockerSection'
 
 export function SettingsPage() {
   const { t } = useTranslation('settings')
@@ -27,6 +28,7 @@ export function SettingsPage() {
           <ModelSection />
           <SimulationSection />
           <ZepSection />
+          <DockerSection />
         </div>
       </div>
     </div>
