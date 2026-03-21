@@ -10,8 +10,8 @@
 - [x] **CONF-01**: User can enter and validate OpenAI-compatible API keys and base URLs
 - [x] **CONF-02**: User can select LLM model from presets (qwen-plus, GPT-4) or enter custom model name
 - [x] **CONF-03**: User can configure simulation parameters (agent count, interaction rounds, platform weights)
-- [ ] **CONF-04**: User can configure Zep Cloud settings (API key, cloud URL, connection test)
-- [ ] **CONF-05**: User can view Docker container status and perform basic management (start/stop/restart)
+- [x] **CONF-04**: User can configure Zep Cloud settings (API key, cloud URL, connection test)
+- [x] **CONF-05**: User can view Docker container status and perform basic management (start/stop/restart)
 - [x] **CONF-06**: Configuration persists across sessions (localStorage or backend config)
 - [x] **CONF-07**: User can test API connection before saving configuration
 
@@ -137,8 +137,8 @@
 | CONF-01 | Phase 3 | Complete |
 | CONF-02 | Phase 3 | Complete |
 | CONF-03 | Phase 3 | Complete |
-| CONF-04 | Phase 3 | Pending |
-| CONF-05 | Phase 3 | Pending |
+| CONF-04 | Phase 3 | Complete |
+| CONF-05 | Phase 3 | Complete |
 | CONF-06 | Phase 3 | Complete |
 | CONF-07 | Phase 3 | Complete |
 | GRPH-01 | Phase 4 | Pending |
