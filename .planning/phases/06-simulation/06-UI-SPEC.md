@@ -47,8 +47,8 @@ Inherited from Phase 02 UI-SPEC. No changes.
 | Token | Value | Usage |
 |-------|-------|-------|
 | xs | 4px | Icon gaps, badge inline padding, post metadata gaps |
-| sm | 8px | Post card internal gaps (icon-to-name, badge-to-badge) |
-| md | 16px | Post card padding, Reddit thread indent per level |
+| sm | 8px | Post card internal gaps (icon-to-name, badge-to-badge), post card vertical padding |
+| md | 16px | Post card horizontal padding, Reddit thread indent per level |
 | lg | 24px | Column header padding, timeline round group spacing |
 | xl | 32px | Progress bar padding (horizontal) |
 | 2xl | 48px | Not used in this phase |
@@ -64,20 +64,19 @@ Exceptions:
 
 ## Typography
 
-Inherited from Phase 02 UI-SPEC. No changes to base scale.
+Inherited from Phase 02 UI-SPEC. No changes to base scale. Exactly 4 roles, 2 weights.
 
 | Role | Size | Weight | Line Height | Phase 6 Usage |
 |------|------|--------|-------------|---------------|
-| Body | 15px | 400 (regular) | 1.5 | Post content text, expanded post body |
-| Label | 13px | 600 (semibold) | 1.4 | Agent names, action type badges, round labels, timeline event text, counter labels |
-| Heading | 22px | 600 (semibold) | 1.2 | Not used (no page heading in command center view) |
+| Body | 15px | 400 (regular) | 1.5 | Post content text (truncated and expanded), expanded post body |
+| Label | 13px | 600 (semibold) | 1.4 | Agent names, action type badges, round labels, timeline event text, counter labels, metadata (timestamps, elapsed time -- rendered in weight 400 and muted color), "wiecej..." expand link |
+| Heading | 22px | 600 (semibold) | 1.2 | Counter values (post count, agent count) in progress bar |
 | Display | 30px | 600 (semibold) | 1.1 | Not used |
 
-Additional type usage:
-- Post content (truncated): 14px / 400 / 1.5 -- one step smaller than body for information density
-- Metadata (timestamp, elapsed time): 12px / 400 / 1.4 -- smallest text, muted color
-- Counter values (post count, agent count): 20px / 600 / 1.2 -- prominent in progress bar
-- Counter labels ("posty", "agenci"): 12px / 400 / 1.4 -- below counter values
+Usage notes:
+- Metadata text (timestamps, elapsed time) uses Label size (13px) at weight 400 with muted color to visually differentiate from semibold labels.
+- Counter values in the progress bar use Heading size (22px) to create visual prominence.
+- Truncated post content uses Body size (15px) with `line-clamp-2`, same size as expanded content.
 
 ---
 
@@ -161,12 +160,12 @@ When a timeline event is clicked and related posts are highlighted:
 |--------|-------|--------|--------|
 | Twitter feed | flex-1 (equal share) | Independent ScrollArea, newest at top | Bird icon + "Twitter" label, sky-500 tint |
 | Reddit feed | flex-1 (equal share) | Independent ScrollArea, newest at top | MessageCircle icon + "Reddit" label, orange-600 tint |
-| Timeline | 288px fixed (w-72) | Independent ScrollArea, newest at top | Clock icon + "Oś czasu" label |
+| Timeline | 288px fixed (w-72) | Independent ScrollArea, newest at top | Clock icon + "Os czasu" label |
 
 ### Narrower Screens (1024px - 1279px)
 
 - Timeline column collapses to a Sheet (slide-in drawer from right)
-- Toggle button (Clock icon) appears at right edge of progress bar
+- Toggle button (Clock icon, `aria-label="Otworz os czasu"`) appears at right edge of progress bar
 - Twitter and Reddit feeds each get flex-1 (full available width)
 - Sheet overlay: 320px wide, same timeline content
 
@@ -184,20 +183,20 @@ Not supported (existing MinScreenMessage from Phase 2).
 - Sticky: `position: sticky; top: 0; z-index: 10`
 - Left section: "Runda X/Y" label (13px semibold) + Progress component (accent fill, 120px wide)
 - Center section: activity counters in a row with 24px gaps
-  - Each counter: value (20px semibold) over label (12px regular muted)
+  - Each counter: value (22px semibold / Heading role) over label (13px regular muted / Label role at weight 400)
   - Counters: posty (posts), komentarze (comments), debaty (debates), agenci (active agents)
-- Right section: elapsed time (12px muted) + action button
+- Right section: elapsed time (13px muted / Label role at weight 400) + action button
   - Running state: "Zatrzymaj" (Stop) button, destructive variant, outline style
   - Completed state: "Zakonczone" success badge + "Przejdz do raportu" accent button
-  - Failed state: "Blad symulacji" error badge + "Wróc do srodowiska" outline button
+  - Failed state: "Blad symulacji" error badge + "Wroc do srodowiska" outline button
 
 ### PostCard (shared between Twitter and Reddit)
 
 - Border-bottom only (no full card border) for feed density
-- Padding: 12px horizontal, 8px vertical (compact)
-- Row 1 (metadata): platform icon (16px, platform color) + agent name (13px semibold) + round badge (Badge variant="outline", "R3") + action type badge (Badge variant="secondary") + timestamp (12px muted, right-aligned)
-- Row 2 (content): post text (14px regular), line-clamp-2 when collapsed
-- Row 3 (expand): "wiecej..." link (12px, accent color) when content exceeds 2 lines
+- Padding: 16px horizontal (md), 8px vertical (sm)
+- Row 1 (metadata): platform icon (16px, platform color) + agent name (13px semibold / Label) + round badge (Badge variant="outline", "R3") + action type badge (Badge variant="secondary") + timestamp (13px regular muted / Label at weight 400, right-aligned)
+- Row 2 (content): post text (15px regular / Body), line-clamp-2 when collapsed
+- Row 3 (expand): "wiecej..." link (13px / Label, accent color) when content exceeds 2 lines
 - Highlight state: bg-accent/10, ring-1 ring-accent/50 (when timeline event clicked)
 - Entrance animation: slide-in-from-top-2 + fade-in, 200ms ease-out (for newly arrived posts)
 - Memoized with React.memo to prevent unnecessary re-renders
@@ -213,7 +212,7 @@ Not supported (existing MinScreenMessage from Phase 2).
 
 - Appears when user scrolled down and new posts arrive
 - Position: sticky top of feed column, below column header
-- Background: accent color, white text, 13px semibold
+- Background: accent color, white text, 13px semibold (Label role)
 - Copy: "X nowych postow" (with Polish plural forms)
 - Click action: smooth scroll to top
 - Z-index: 5 (above feed, below progress bar)
@@ -221,7 +220,7 @@ Not supported (existing MinScreenMessage from Phase 2).
 ### EventTimeline (right column)
 
 - Grouped by round, newest round at top
-- Round header: "Runda N" (13px semibold), sticky within scroll
+- Round header: "Runda N" (13px semibold / Label), sticky within scroll
 - Event items below each round header:
   - Debate: Swords icon (amber-500) + agent names
   - Stance change: ArrowUpDown icon (accent) + agent name + direction
@@ -256,7 +255,7 @@ All copy in Polish (default) with English translations. Tone: friendly, direct, 
 | Empty state body | Trwa inicjalizacja symulacji. To moze potrwac chwile. | Initializing simulation. This may take a moment. |
 | Error state (simulation failed) | Symulacja zakonczyla sie bledem | Simulation ended with an error |
 | Error state body | Wystapil problem podczas symulacji. Sprawdz logi serwera lub sprobuj ponownie. | A problem occurred during simulation. Check server logs or try again. |
-| Error retry | Wróc do srodowiska | Return to environment |
+| Error retry | Wroc do srodowiska | Return to environment |
 | Completion heading | Symulacja zakonczona | Simulation complete |
 | Progress label | Runda {{current}}/{{total}} | Round {{current}}/{{total}} |
 | Posts counter label | posty | posts |
@@ -276,6 +275,7 @@ All copy in Polish (default) with English translations. Tone: friendly, direct, 
 | Action type: comment | komentarz | comment |
 | Action type: retweet | retweet | retweet |
 | Action type: debate | debata | debate |
+| Timeline drawer toggle | Otworz os czasu | Open timeline |
 
 ### Polish Plural Forms (simulation namespace)
 
