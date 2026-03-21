@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 5 context gathered
-last_updated: "2026-03-21T13:06:38.578Z"
-last_activity: 2026-03-21 -- Completed 04-02 Graph visualization
+status: in_progress
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-21T13:40:36Z"
+last_activity: 2026-03-21 -- Completed 05-01 Environment foundation
 progress:
   total_phases: 10
   completed_phases: 4
   total_plans: 9
-  completed_plans: 9
+  completed_plans: 10
   percent: 100
 ---
 
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Users can interact with the full MiroFish prediction pipeline in a clean, Polish-language interface with complete system configurability.
-**Current focus:** Phase 4 -- Graph Construction (COMPLETE)
+**Current focus:** Phase 5 -- Environment Setup (IN PROGRESS)
 
 ## Current Position
 
-Phase: 4 of 10 (Graph Construction) -- COMPLETE
-Plan: 2 of 2 in current phase (all plans complete)
-Status: Phase 04 complete, ready for Phase 05
-Last activity: 2026-03-21 -- Completed 04-02 Graph visualization
+Phase: 5 of 10 (Environment Setup)
+Plan: 1 of 2 in current phase
+Status: Plan 05-01 complete, ready for 05-02
+Last activity: 2026-03-21 -- Completed 05-01 Environment foundation
 
 Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 8min
-- Total execution time: 1.17 hours
+- Total plans completed: 9
+- Average duration: 9min
+- Total execution time: 1.47 hours
 
 **By Phase:**
 
@@ -47,9 +47,10 @@ Progress: [██████████] 100%
 | 02 | 3/3 | 18min | 6min |
 | 03 | 2/2 | 11min | 6min |
 | 04 | 2/2 | 30min | 15min |
+| 05 | 1/2 | 18min | 18min |
 
 **Recent Trend:**
-- Last 5 plans: 02-03 (3min), 03-01 (6min), 03-02 (5min), 04-01 (26min), 04-02 (4min)
+- Last 5 plans: 03-01 (6min), 03-02 (5min), 04-01 (26min), 04-02 (4min), 05-01 (18min)
 - Trend: stable
 
 *Updated after each plan completion*
@@ -91,6 +92,9 @@ Recent decisions affecting current work:
 - [04-02]: Reagraph labelType=auto provides tooltip-like hover behavior, no custom tooltip needed
 - [04-02]: Filter state in local React state (not Zustand) -- ephemeral per-session
 - [04-02]: Graph data staleTime=Infinity since constructed graph data is immutable
+- [05-01]: Inline Array.sort/filter for entity table instead of @tanstack/react-table hooks (simpler for 3 cols)
+- [05-01]: Entity relationship counts as optional prop since EntitySchema lacks relationship data
+- [05-01]: EntityDetailPanel reuses NodeDetailPanel Sheet pattern with relationship list
 
 ### Pending Todos
 
@@ -104,6 +108,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T13:06:38.573Z
-Stopped at: Phase 5 context gathered
-Resume file: .planning/phases/05-environment-setup/05-CONTEXT.md
+Last session: 2026-03-21T13:40:36Z
+Stopped at: Completed 05-01-PLAN.md
+Resume file: .planning/phases/05-environment-setup/05-01-SUMMARY.md
