@@ -53,14 +53,14 @@
 
 ### Internationalization
 
-- [ ] **I18N-01**: All UI strings externalized via i18n framework (react-i18next)
-- [ ] **I18N-02**: Polish language as default with complete translations
+- [x] **I18N-01**: All UI strings externalized via i18n framework (react-i18next)
+- [x] **I18N-02**: Polish language as default with complete translations
 - [ ] **I18N-03**: English language available via language switcher in header
 - [ ] **I18N-04**: Polish plural forms handled correctly (4 plural forms via ICU MessageFormat)
 
 ### UI/UX
 
-- [ ] **UIUX-01**: Minimalist, clean design with consistent component library (shadcn/ui)
+- [x] **UIUX-01**: Minimalist, clean design with consistent component library (shadcn/ui)
 - [ ] **UIUX-02**: 5-stage pipeline displayed as linear stepper/wizard navigation
 - [ ] **UIUX-03**: Responsive layout — desktop-first, graceful degradation to tablet (min 1024px)
 - [ ] **UIUX-04**: Dark mode with OS preference detection and manual toggle
@@ -124,11 +124,11 @@
 | INFR-02 | Phase 1 | Complete |
 | INFR-03 | Phase 1 | Complete |
 | INFR-04 | Phase 1 | Complete |
-| I18N-01 | Phase 2 | Pending |
-| I18N-02 | Phase 2 | Pending |
+| I18N-01 | Phase 2 | Complete |
+| I18N-02 | Phase 2 | Complete |
 | I18N-03 | Phase 2 | Pending |
 | I18N-04 | Phase 2 | Pending |
-| UIUX-01 | Phase 2 | Pending |
+| UIUX-01 | Phase 2 | Complete |
 | UIUX-02 | Phase 2 | Pending |
 | UIUX-03 | Phase 2 | Pending |
 | UIUX-05 | Phase 2 | Pending |
