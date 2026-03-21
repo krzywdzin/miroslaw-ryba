@@ -7,12 +7,14 @@ import plNavigation from '@/locales/pl/navigation.json'
 import plDashboard from '@/locales/pl/dashboard.json'
 import plErrors from '@/locales/pl/errors.json'
 import plSettings from '@/locales/pl/settings.json'
+import plGraph from '@/locales/pl/graph.json'
 
 import enCommon from '@/locales/en/common.json'
 import enNavigation from '@/locales/en/navigation.json'
 import enDashboard from '@/locales/en/dashboard.json'
 import enErrors from '@/locales/en/errors.json'
 import enSettings from '@/locales/en/settings.json'
+import enGraph from '@/locales/en/graph.json'
 
 i18n
   .use(LanguageDetector)
@@ -25,6 +27,7 @@ i18n
         dashboard: plDashboard,
         errors: plErrors,
         settings: plSettings,
+        graph: plGraph,
       },
       en: {
         common: enCommon,
@@ -32,11 +35,12 @@ i18n
         dashboard: enDashboard,
         errors: enErrors,
         settings: enSettings,
+        graph: enGraph,
       },
     },
     lng: 'pl',
     fallbackLng: 'en',
-    ns: ['common', 'navigation', 'dashboard', 'errors', 'settings'],
+    ns: ['common', 'navigation', 'dashboard', 'errors', 'settings', 'graph'],
     defaultNS: 'common',
     interpolation: {
       escapeValue: false,

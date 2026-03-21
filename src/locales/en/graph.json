@@ -1,0 +1,55 @@
+{
+  "upload": {
+    "title": "Knowledge Graph Builder",
+    "dropzone": {
+      "title": "Drag files here or click to browse",
+      "subtitle": "PDF, DOCX, TXT, MD"
+    },
+    "files": {
+      "title": "Uploaded files",
+      "remove": "Remove",
+      "empty": "No files"
+    },
+    "prediction": {
+      "label": "Prediction goal",
+      "placeholder": "Describe your prediction goal in natural language...",
+      "hint": "Supports Markdown"
+    },
+    "submit": "Build graph",
+    "submitting": "Uploading..."
+  },
+  "build": {
+    "title": "Graph construction in progress",
+    "steps": {
+      "analyzing": "Analyzing files",
+      "extracting": "Extracting entities",
+      "building": "Building relations",
+      "done": "Done"
+    },
+    "error": "Graph build error",
+    "retry": "Try again"
+  },
+  "view": {
+    "title": "Knowledge Graph",
+    "toolbar": {
+      "search": "Search nodes...",
+      "filter": "Filter",
+      "fitToScreen": "Fit to screen"
+    },
+    "legend": {
+      "title": "Legend"
+    },
+    "detail": {
+      "title": "Details",
+      "type": "Type",
+      "relationships": "Relationships",
+      "close": "Close"
+    },
+    "types": {
+      "person": "People",
+      "organization": "Organizations",
+      "location": "Locations",
+      "event": "Events"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "upload": {
+    "title": "Budowa grafu wiedzy",
+    "dropzone": {
+      "title": "Przeciagnij pliki lub kliknij",
+      "subtitle": "PDF, DOCX, TXT, MD"
+    },
+    "files": {
+      "title": "Przeslane pliki",
+      "remove": "Usun",
+      "empty": "Brak plikow"
+    },
+    "prediction": {
+      "label": "Cel predykcji",
+      "placeholder": "Opisz cel predykcji w jezyku naturalnym...",
+      "hint": "Obsluguje Markdown"
+    },
+    "submit": "Buduj graf",
+    "submitting": "Przesylanie..."
+  },
+  "build": {
+    "title": "Budowa grafu w toku",
+    "steps": {
+      "analyzing": "Analiza plikow",
+      "extracting": "Ekstrakcja encji",
+      "building": "Budowa relacji",
+      "done": "Gotowe"
+    },
+    "error": "Blad budowy grafu",
+    "retry": "Sprobuj ponownie"
+  },
+  "view": {
+    "title": "Graf wiedzy",
+    "toolbar": {
+      "search": "Szukaj wezlow...",
+      "filter": "Filtruj",
+      "fitToScreen": "Dopasuj do ekranu"
+    },
+    "legend": {
+      "title": "Legenda"
+    },
+    "detail": {
+      "title": "Szczegoly",
+      "type": "Typ",
+      "relationships": "Relacje",
+      "close": "Zamknij"
+    },
+    "types": {
+      "person": "Osoby",
+      "organization": "Organizacje",
+      "location": "Miejsca",
+      "event": "Wydarzenia"
+    }
+  }
+}
