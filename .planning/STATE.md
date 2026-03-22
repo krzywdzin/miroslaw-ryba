@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 6 plans verified
-last_updated: "2026-03-21T16:49:58.024Z"
-last_activity: 2026-03-21 -- Completed 05-02 Agent cards, parameter form, launch flow
+stopped_at: Completed 06-01-PLAN.md
+last_updated: "2026-03-22T02:36:28.560Z"
+last_activity: 2026-03-22 -- Completed 06-01 Simulation data layer
 progress:
   total_phases: 10
   completed_phases: 5
   total_plans: 13
-  completed_plans: 11
-  percent: 100
+  completed_plans: 12
+  percent: 92
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Users can interact with the full MiroFish prediction pipeline in a clean, Polish-language interface with complete system configurability.
-**Current focus:** Phase 5 -- Environment Setup (COMPLETE)
+**Current focus:** Phase 6 -- Simulation
 
 ## Current Position
 
-Phase: 5 of 10 (Environment Setup)
-Plan: 2 of 2 in current phase
-Status: Phase 05 complete, ready for Phase 06
-Last activity: 2026-03-21 -- Completed 05-02 Agent cards, parameter form, launch flow
+Phase: 6 of 10 (Simulation)
+Plan: 1 of 2 in current phase
+Status: 06-01 complete, ready for 06-02
+Last activity: 2026-03-22 -- Completed 06-01 Simulation data layer
 
-Progress: [██████████] 100%
+Progress: [█████████░] 92%
 
 ## Performance Metrics
 
@@ -55,6 +55,7 @@ Progress: [██████████] 100%
 
 *Updated after each plan completion*
 | Phase 05 P02 | 3min | 2 tasks | 9 files |
+| Phase 06-simulation P01 | 3min | 2 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -99,6 +100,9 @@ Recent decisions affecting current work:
 - [Phase 05]: Parameter overrides stored in local React state, never written back to config store
 - [Phase 05]: Auto-prepare creates simulation and generates agent profiles on page mount
 - [Phase 05]: Route guard redirects to /graph if graph not completed
+- [Phase 06-01]: Staggered polling intervals (2000/2500/3000ms) to avoid request storms
+- [Phase 06-01]: Store partialize excludes activeRoundFilter and highlightedEventId from persistence (ephemeral UI state)
+- [Phase 06-01]: useElapsedTime resets to 0 when isRunning becomes false (clean state for next run)
 
 ### Pending Todos
 
@@ -112,6 +116,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T16:49:58.020Z
-Stopped at: Phase 6 plans verified
-Resume file: .planning/phases/06-simulation/06-01-PLAN.md
+Last session: 2026-03-22T02:36:28.556Z
+Stopped at: Completed 06-01-PLAN.md
+Resume file: None

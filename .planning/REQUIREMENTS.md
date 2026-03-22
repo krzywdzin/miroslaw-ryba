@@ -32,10 +32,10 @@
 
 ### Pipeline — Simulation
 
-- [ ] **SIMU-01**: User can start and monitor simulation with real-time progress (agent counts, interaction counts, timeline)
+- [x] **SIMU-01**: User can start and monitor simulation with real-time progress (agent counts, interaction counts, timeline)
 - [ ] **SIMU-02**: User can view dual-platform split view (Twitter-like + Reddit-like) showing parallel simulations
-- [ ] **SIMU-03**: User can see agent activity posts, comments, and debates in real-time via polling
-- [ ] **SIMU-04**: User can view action timeline showing key events during simulation
+- [x] **SIMU-03**: User can see agent activity posts, comments, and debates in real-time via polling
+- [x] **SIMU-04**: User can view action timeline showing key events during simulation
 
 ### Pipeline — Reports
 
@@ -150,10 +150,10 @@
 | ENVR-02 | Phase 5 | Complete |
 | ENVR-03 | Phase 5 | Complete |
 | ENVR-04 | Phase 5 | Complete |
-| SIMU-01 | Phase 6 | Pending |
+| SIMU-01 | Phase 6 | Complete |
 | SIMU-02 | Phase 6 | Pending |
-| SIMU-03 | Phase 6 | Pending |
-| SIMU-04 | Phase 6 | Pending |
+| SIMU-03 | Phase 6 | Complete |
+| SIMU-04 | Phase 6 | Complete |
 | REPT-01 | Phase 7 | Pending |
 | REPT-02 | Phase 7 | Pending |
 | REPT-03 | Phase 7 | Pending |
