@@ -126,10 +126,11 @@ Plans:
   1. User can view a generated prediction report with rich markdown formatting (tables, charts, sections)
   2. User can export the report as PDF or Markdown file
   3. User can view a list of past simulations with status, date, and topic
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: TBD
+- [ ] 07-01-PLAN.md — Packages (react-markdown, remark-gfm, typography), i18n reports namespace, report generation hooks, article view with scroll spy TOC, export toolbar, ReportPage orchestrator
+- [ ] 07-02-PLAN.md — Simulation history table with status badges, report links, date sorting, HistoryPage
 
 ### Phase 8: Interactive Dialogue
 **Goal**: Users can have streaming conversations with the ReportAgent and simulated agents, completing pipeline stage 5
@@ -187,7 +188,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 4. Graph Construction | 2/2 | Complete    | 2026-03-21 |
 | 5. Environment Setup | 0/2 | Not started | - |
 | 6. Simulation | 2/2 | Complete   | 2026-03-22 |
-| 7. Reports | 0/? | Not started | - |
+| 7. Reports | 0/2 | Not started | - |
 | 8. Interactive Dialogue | 0/? | Not started | - |
 | 9. Polish and Differentiation | 0/? | Not started | - |
 | 10. Documentation and Release | 0/? | Not started | - |
