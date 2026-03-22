@@ -1,0 +1,57 @@
+{
+  "progress": {
+    "round": "Runda {{current}}/{{total}}",
+    "posts": "posty",
+    "comments": "komentarze",
+    "debates": "debaty",
+    "agents": "aktywni agenci",
+    "elapsed": "czas trwania",
+    "stop": "Zatrzymaj",
+    "stopConfirm": {
+      "title": "Zatrzymac symulacje?",
+      "description": "Postep zostanie zachowany.",
+      "confirm": "Tak, zatrzymaj",
+      "cancel": "Kontynuuj"
+    }
+  },
+  "completion": {
+    "heading": "Symulacja zakonczona",
+    "badge": "Zakonczone",
+    "goToReport": "Przejdz do raportu"
+  },
+  "error": {
+    "heading": "Symulacja zakonczyla sie bledem",
+    "body": "Wystapil problem podczas symulacji. Sprawdz logi serwera lub sprobuj ponownie.",
+    "returnToEnv": "Wroc do srodowiska"
+  },
+  "empty": {
+    "heading": "Laczenie z symulacja...",
+    "body": "Trwa inicjalizacja symulacji. To moze potrwac chwile."
+  },
+  "feed": {
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "expand": "wiecej...",
+    "replyingTo": "w odpowiedzi na",
+    "waitingForPosts": "Oczekiwanie na posty...",
+    "newPosts_one": "{{count}} nowy post",
+    "newPosts_few": "{{count}} nowe posty",
+    "newPosts_many": "{{count}} nowych postow"
+  },
+  "timeline": {
+    "header": "Os czasu",
+    "round": "Runda {{round}}",
+    "allRounds": "Wszystkie rundy",
+    "drawerToggle": "Otworz os czasu",
+    "waitingForEvents": "Oczekiwanie na zdarzenia..."
+  },
+  "actionType": {
+    "post": "post",
+    "comment": "komentarz",
+    "retweet": "retweet",
+    "debate": "debata"
+  },
+  "activeAgents_one": "{{count}} aktywny agent",
+  "activeAgents_few": "{{count}} aktywni agenci",
+  "activeAgents_many": "{{count}} aktywnych agentow"
+}

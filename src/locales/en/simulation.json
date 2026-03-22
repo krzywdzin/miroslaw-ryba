@@ -1,0 +1,57 @@
+{
+  "progress": {
+    "round": "Round {{current}}/{{total}}",
+    "posts": "posts",
+    "comments": "comments",
+    "debates": "debates",
+    "agents": "active agents",
+    "elapsed": "duration",
+    "stop": "Stop",
+    "stopConfirm": {
+      "title": "Stop simulation?",
+      "description": "Progress will be saved.",
+      "confirm": "Yes, stop",
+      "cancel": "Continue"
+    }
+  },
+  "completion": {
+    "heading": "Simulation complete",
+    "badge": "Completed",
+    "goToReport": "Go to report"
+  },
+  "error": {
+    "heading": "Simulation ended with an error",
+    "body": "A problem occurred during simulation. Check server logs or try again.",
+    "returnToEnv": "Return to environment"
+  },
+  "empty": {
+    "heading": "Connecting to simulation...",
+    "body": "Initializing simulation. This may take a moment."
+  },
+  "feed": {
+    "twitter": "Twitter",
+    "reddit": "Reddit",
+    "expand": "more...",
+    "replyingTo": "replying to",
+    "waitingForPosts": "Waiting for posts...",
+    "newPosts_one": "{{count}} new post",
+    "newPosts_few": "{{count}} new posts",
+    "newPosts_many": "{{count}} new posts"
+  },
+  "timeline": {
+    "header": "Timeline",
+    "round": "Round {{round}}",
+    "allRounds": "All rounds",
+    "drawerToggle": "Open timeline",
+    "waitingForEvents": "Waiting for events..."
+  },
+  "actionType": {
+    "post": "post",
+    "comment": "comment",
+    "retweet": "retweet",
+    "debate": "debate"
+  },
+  "activeAgents_one": "{{count}} active agent",
+  "activeAgents_few": "{{count}} active agents",
+  "activeAgents_many": "{{count}} active agents"
+}

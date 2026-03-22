@@ -9,6 +9,7 @@ import plErrors from '@/locales/pl/errors.json'
 import plSettings from '@/locales/pl/settings.json'
 import plGraph from '@/locales/pl/graph.json'
 import plEnvironment from '@/locales/pl/environment.json'
+import plSimulation from '@/locales/pl/simulation.json'
 
 import enCommon from '@/locales/en/common.json'
 import enNavigation from '@/locales/en/navigation.json'
@@ -17,6 +18,7 @@ import enErrors from '@/locales/en/errors.json'
 import enSettings from '@/locales/en/settings.json'
 import enGraph from '@/locales/en/graph.json'
 import enEnvironment from '@/locales/en/environment.json'
+import enSimulation from '@/locales/en/simulation.json'
 
 i18n
   .use(LanguageDetector)
@@ -31,6 +33,7 @@ i18n
         settings: plSettings,
         graph: plGraph,
         environment: plEnvironment,
+        simulation: plSimulation,
       },
       en: {
         common: enCommon,
@@ -40,11 +43,12 @@ i18n
         settings: enSettings,
         graph: enGraph,
         environment: enEnvironment,
+        simulation: enSimulation,
       },
     },
     lng: 'pl',
     fallbackLng: 'en',
-    ns: ['common', 'navigation', 'dashboard', 'errors', 'settings', 'graph', 'environment'],
+    ns: ['common', 'navigation', 'dashboard', 'errors', 'settings', 'graph', 'environment', 'simulation'],
     defaultNS: 'common',
     interpolation: {
       escapeValue: false,
