@@ -42,7 +42,7 @@ export function SimulationProgressBar({
   return (
     <div
       data-testid="progress-bar"
-      className="sticky top-0 z-10 flex h-14 items-center justify-between border-b bg-white px-8"
+      className="sticky top-0 z-10 flex h-14 items-center justify-between border-b bg-background px-8"
     >
       {/* Left: round label + progress */}
       <div className="flex items-center gap-3">

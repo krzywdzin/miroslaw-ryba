@@ -135,7 +135,7 @@ export function ZepSection() {
                     </div>
                     <FormMessage />
                     {connectionTest.isSuccess && connectionTest.data && (
-                      <div className="mt-2 rounded-md border-l-[3px] border-[hsl(142_71%_45%)] bg-white p-4 animate-in fade-in slide-in-from-top-1 duration-200">
+                      <div className="mt-2 rounded-md border-l-[3px] border-[hsl(142_71%_45%)] bg-background p-4 animate-in fade-in slide-in-from-top-1 duration-200">
                         <div className="flex items-center gap-1.5 text-[13px] text-[hsl(142_71%_45%)]">
                           <CheckCircle className="h-4 w-4" />
                           {t('connectionTest.zepSuccess')}

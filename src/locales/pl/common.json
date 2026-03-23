@@ -23,6 +23,12 @@
   "pipeline": "Pipeline",
   "settingsComingSoon": "Konfiguracja dostępna w Fazie 3",
   "minScreenWidth": "Ta aplikacja wymaga ekranu o szerokości co najmniej 1024px",
+  "theme": {
+    "label": "Motyw",
+    "system": "Systemowy",
+    "light": "Jasny",
+    "dark": "Ciemny"
+  },
   "shortcuts": {
     "title": "Skróty klawiszowe",
     "navigate": "Nawigacja między etapami",

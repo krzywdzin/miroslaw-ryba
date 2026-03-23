@@ -11,6 +11,7 @@ import {
   BreadcrumbPage,
 } from '@/components/ui/breadcrumb'
 import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
+import { ThemeSwitcher } from './ThemeSwitcher'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { BackendStatus } from './BackendStatus'
 
@@ -34,7 +35,7 @@ export function Header({ onMenuClick }: HeaderProps) {
     : location.pathname.slice(1)
 
   return (
-    <header className="flex h-[var(--header-height)] shrink-0 items-center border-b bg-white px-4 lg:px-6">
+    <header className="flex h-[var(--header-height)] shrink-0 items-center border-b bg-background px-4 lg:px-6">
       {/* Mobile menu button */}
       <Button
         variant="ghost"
@@ -83,6 +84,7 @@ export function Header({ onMenuClick }: HeaderProps) {
 
       {/* Right group */}
       <div className="flex items-center gap-2">
+        <ThemeSwitcher />
         <LanguageSwitcher />
         <Tooltip>
           <TooltipTrigger asChild>
