@@ -21,7 +21,7 @@ import { ShortcutsHelpModal } from './ShortcutsHelpModal';
 describe('ShortcutsHelpModal', () => {
   it('renders dialog with title when open', () => {
     render(<ShortcutsHelpModal open={true} onOpenChange={() => {}} />);
-    expect(screen.getByText('Keyboard Shortcuts')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Keyboard Shortcuts' })).toBeInTheDocument();
   });
 
   it('renders all 4 shortcut entries', () => {

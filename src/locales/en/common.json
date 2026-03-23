@@ -18,5 +18,12 @@
   "agplNote": "AGPL-3.0 License",
   "pipeline": "Pipeline",
   "settingsComingSoon": "Configuration available in Phase 3",
-  "minScreenWidth": "This application requires a screen width of at least 1024px"
+  "minScreenWidth": "This application requires a screen width of at least 1024px",
+  "shortcuts": {
+    "title": "Keyboard Shortcuts",
+    "navigate": "Navigate between stages",
+    "chatFocus": "Focus chat input",
+    "panelSwitch": "Switch panels",
+    "help": "Help (shortcuts)"
+  }
 }

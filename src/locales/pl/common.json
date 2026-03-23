@@ -22,5 +22,12 @@
   "agplNote": "Licencja AGPL-3.0",
   "pipeline": "Pipeline",
   "settingsComingSoon": "Konfiguracja dostępna w Fazie 3",
-  "minScreenWidth": "Ta aplikacja wymaga ekranu o szerokości co najmniej 1024px"
+  "minScreenWidth": "Ta aplikacja wymaga ekranu o szerokości co najmniej 1024px",
+  "shortcuts": {
+    "title": "Skróty klawiszowe",
+    "navigate": "Nawigacja między etapami",
+    "chatFocus": "Fokus na pole czatu",
+    "panelSwitch": "Przełączanie paneli",
+    "help": "Pomoc (skróty)"
+  }
 }
