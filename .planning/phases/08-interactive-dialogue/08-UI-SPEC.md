@@ -66,9 +66,11 @@ Exceptions:
 
 Inherited from Phase 2. Geist Sans, weights 400 and 600 only.
 
+4 sizes: 13, 15, 22, 30.
+
 | Role | Size | Weight | Line Height | Usage in Phase 8 |
 |------|------|--------|-------------|-------------------|
-| Body | 15px | 400 (regular) | 1.5 | Chat message text, agent description, personality text |
+| Body | 15px | 400 (regular) | 1.5 | Chat message text (user and agent), agent description, personality text |
 | Label | 13px | 600 (semibold) | 1.4 | Agent selector label, "Na podstawie:" header, profile section headers, timestamps |
 | Heading | 22px | 600 (semibold) | 1.2 | Not used in Phase 8 (page title is in stepper) |
 | Display | 30px | 600 (semibold) | 1.1 | Not used in Phase 8 |
@@ -77,8 +79,8 @@ Inherited from Phase 2. Geist Sans, weights 400 and 600 only.
 
 | Element | Size | Weight | Notes |
 |---------|------|--------|-------|
-| User message text | 14px (text-sm) | 400 | Plain text, no markdown rendering |
-| Agent message prose | 14px (prose-sm) | 400 | Rendered via react-markdown, inherits prose-sm sizing |
+| User message text | 15px | 400 | Plain text, no markdown rendering |
+| Agent message prose | 15px (prose) | 400 | Rendered via react-markdown + remark-gfm, uses prose sizing (not prose-sm) |
 | Source list items | 13px | 400 | Below agent bubble in "Na podstawie:" section |
 | Tool call header | 13px | 600 | Collapsible trigger label |
 | Tool call content | 13px (monospace) | 400 | Pre-formatted code-like display |
@@ -128,6 +130,10 @@ Light mode only. Dark mode deferred to Phase 9. Inherited from Phase 2.
 - Input field border-radius: 8px (rounded-lg), 1px border default
 - Agent context panel: left border 1px separator, no rounded corners (flush with layout edge)
 - Source/tool call section border-radius: 8px, 1px muted border
+
+### Focal Point
+
+The primary focal point is the **chat message area** -- the scrollable conversation log occupies the largest visual area and draws the eye through content flow and the accent-colored user bubbles contrasting against the neutral background.
 
 ---
 
@@ -185,8 +191,8 @@ Light mode only. Dark mode deferred to Phase 9. Inherited from Phase 2.
 
 | Variant | Alignment | Background | Content Rendering |
 |---------|-----------|------------|-------------------|
-| User | Right-aligned (ml-auto) | bg-primary | Plain text (text-sm) |
-| Agent | Left-aligned (mr-auto) | bg-muted | Markdown via react-markdown + remark-gfm (prose-sm) |
+| User | Right-aligned (ml-auto) | bg-primary | Plain text (15px) |
+| Agent | Left-aligned (mr-auto) | bg-muted | Markdown via react-markdown + remark-gfm (prose, 15px) |
 | Error | Left-aligned (mr-auto) | bg-destructive/10 | Error text with retry prompt |
 
 Max-width: 80% of container. Border-radius: 16px (rounded-2xl). Padding: 16px horizontal, 12px vertical (px-4 py-3).
@@ -206,6 +212,7 @@ Max-width: 80% of container. Border-radius: 16px (rounded-2xl). Padding: 16px ho
 - Placeholder: "Napisz wiadomosc..." / "Write a message..."
 - Send button: icon-only (Send icon from Lucide), 36px square, accent background, rounded-md
 - Send button disabled when: input empty OR mutation pending
+- Send button `aria-label`: "Wyslij wiadomosc" / "Send message"
 - Textarea grows from 1 line to max 4 lines (56px to 120px), then scrolls internally
 - Submit on Enter (without Shift). Shift+Enter inserts newline.
 
@@ -270,7 +277,7 @@ All copy in Polish (default) with English translations in i18n `chat` namespace.
 | Simulated agents group | Agenci symulacji | Simulation agents |
 | No agents placeholder | Brak agentow | No agents |
 | Input placeholder | Napisz wiadomosc... | Write a message... |
-| Send button (a11y) | Wyslij | Send |
+| Send button (a11y) | Wyslij wiadomosc | Send message |
 | Empty state heading | Rozpocznij rozmowe | Start a conversation |
 | Empty state body | Zadaj pytanie o raport predykcji lub porozmawiaj z agentem symulacji. | Ask a question about the prediction report or chat with a simulation agent. |
 | Send error toast | Nie udalo sie wyslac wiadomosci. Sprobuj ponownie. | Failed to send message. Try again. |
@@ -357,7 +364,7 @@ No third-party registries declared for Phase 8. All components are shadcn offici
 |---------|-------------|
 | Chat messages | `role="log"` with `aria-live="polite"` on message container |
 | Agent selector | shadcn Select provides full keyboard nav + ARIA |
-| Send button | `aria-label` with translated "Wyslij" / "Send" |
+| Send button | `aria-label` with translated "Wyslij wiadomosc" / "Send message" |
 | Typing indicator | `aria-label="Oczekiwanie na odpowiedz"` / `"Waiting for response"` |
 | Collapsible tool calls | shadcn Collapsible provides ARIA expanded/collapsed state |
 | Chat input | `aria-label` with translated placeholder text |
