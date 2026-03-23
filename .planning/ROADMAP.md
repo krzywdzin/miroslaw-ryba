@@ -21,7 +21,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 7: Reports** - Pipeline stage 4: markdown report display, PDF/Markdown export, simulation history
 - [ ] **Phase 8: Interactive Dialogue** - Pipeline stage 5: ReportAgent chat, agent interviews, streaming markdown
 - [ ] **Phase 9: Polish and Differentiation** - Dark mode, keyboard shortcuts, production quality pass
-- [ ] **Phase 10: Documentation and Release** - Bilingual docs (PL + EN), contributing guide, AGPL-3.0 compliance, open-source release
+- [x] **Phase 10: Documentation and Release** - Bilingual docs (PL + EN), contributing guide, AGPL-3.0 compliance, open-source release (completed 2026-03-23)
 
 ## Phase Details
 
@@ -193,4 +193,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Reports | 1/2 | In Progress|  |
 | 8. Interactive Dialogue | 1/2 | In Progress|  |
 | 9. Polish and Differentiation | 1/2 | In Progress|  |
-| 10. Documentation and Release | 0/2 | Not started | - |
+| 10. Documentation and Release | 2/2 | Complete   | 2026-03-23 |

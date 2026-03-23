@@ -80,9 +80,9 @@
 
 - [ ] **DOCS-01**: README in English with project overview, features, screenshots
 - [ ] **DOCS-02**: README in Polish (README.pl.md) with full translation
-- [ ] **DOCS-03**: Installation and setup guide (Docker + source deployment)
-- [ ] **DOCS-04**: Configuration guide (API keys, models, Zep Cloud)
-- [ ] **DOCS-05**: Contributing guide (CONTRIBUTING.md)
+- [x] **DOCS-03**: Installation and setup guide (Docker + source deployment)
+- [x] **DOCS-04**: Configuration guide (API keys, models, Zep Cloud)
+- [x] **DOCS-05**: Contributing guide (CONTRIBUTING.md)
 - [ ] **DOCS-06**: License file (AGPL-3.0, compliant with MiroFish license)
 
 ## v2 Requirements
@@ -166,9 +166,9 @@
 | UIUX-07 | Phase 9 | Complete |
 | DOCS-01 | Phase 10 | Pending |
 | DOCS-02 | Phase 10 | Pending |
-| DOCS-03 | Phase 10 | Pending |
-| DOCS-04 | Phase 10 | Pending |
-| DOCS-05 | Phase 10 | Pending |
+| DOCS-03 | Phase 10 | Complete |
+| DOCS-04 | Phase 10 | Complete |
+| DOCS-05 | Phase 10 | Complete |
 | DOCS-06 | Phase 10 | Pending |
 
 **Coverage:**
