@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Prediction Report",
+    "generating": "Generating Report",
+    "history": "Simulation History"
+  },
+  "toolbar": {
+    "exportPdf": "Export PDF",
+    "downloadMarkdown": "Download Markdown"
+  },
+  "toc": {
+    "heading": "Table of Contents"
+  },
+  "generation": {
+    "progressLabel": "Generation progress",
+    "sectionDone": "Completed",
+    "sectionActive": "Generating...",
+    "sectionPending": "Pending",
+    "checking": "Checking report..."
+  },
+  "history": {
+    "topic": "Topic",
+    "status": "Status",
+    "date": "Date",
+    "agents": "Agents",
+    "report": "Report",
+    "open": "Open",
+    "noReport": "No report"
+  },
+  "status": {
+    "completed": "Completed",
+    "running": "Running",
+    "generating": "Generating",
+    "failed": "Failed",
+    "pending": "Pending"
+  },
+  "empty": {
+    "historyHeading": "No history",
+    "historyBody": "No simulations have been run yet. Start a prediction to see results here.",
+    "reportHeading": "Report unavailable",
+    "reportBody": "This report has not been generated yet."
+  },
+  "error": {
+    "generationFailed": "Report generation failed. Check server connection and try again.",
+    "generationTimeout": "Report generation is taking longer than expected. Try again later.",
+    "fetchFailed": "Could not load report.",
+    "historyFetchFailed": "Could not load simulation history.",
+    "retry": "Regenerate"
+  },
+  "cta": {
+    "goToReport": "Go to report"
+  }
+}

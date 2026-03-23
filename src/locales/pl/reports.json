@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Raport predykcji",
+    "generating": "Generowanie raportu",
+    "history": "Historia symulacji"
+  },
+  "toolbar": {
+    "exportPdf": "Eksportuj PDF",
+    "downloadMarkdown": "Pobierz Markdown"
+  },
+  "toc": {
+    "heading": "Spis tre\u015bci"
+  },
+  "generation": {
+    "progressLabel": "Post\u0119p generowania",
+    "sectionDone": "Uko\u0144czono",
+    "sectionActive": "Generowanie...",
+    "sectionPending": "Oczekuje",
+    "checking": "Sprawdzanie raportu..."
+  },
+  "history": {
+    "topic": "Temat",
+    "status": "Status",
+    "date": "Data",
+    "agents": "Agenci",
+    "report": "Raport",
+    "open": "Otw\u00f3rz",
+    "noReport": "Brak raportu"
+  },
+  "status": {
+    "completed": "Uko\u0144czony",
+    "running": "W trakcie",
+    "generating": "Generowanie",
+    "failed": "B\u0142\u0105d",
+    "pending": "Oczekuj\u0105cy"
+  },
+  "empty": {
+    "historyHeading": "Brak historii",
+    "historyBody": "Nie przeprowadzono jeszcze \u017cadnej symulacji. Rozpocznij predykcj\u0119, aby zobaczy\u0107 wyniki tutaj.",
+    "reportHeading": "Raport niedost\u0119pny",
+    "reportBody": "Ten raport nie zosta\u0142 jeszcze wygenerowany."
+  },
+  "error": {
+    "generationFailed": "Nie uda\u0142o si\u0119 wygenerowa\u0107 raportu. Sprawd\u017a po\u0142\u0105czenie z serwerem i spr\u00f3buj ponownie.",
+    "generationTimeout": "Generowanie raportu trwa d\u0142u\u017cej ni\u017c oczekiwano. Spr\u00f3buj ponownie p\u00f3\u017aniej.",
+    "fetchFailed": "Nie uda\u0142o si\u0119 za\u0142adowa\u0107 raportu.",
+    "historyFetchFailed": "Nie uda\u0142o si\u0119 za\u0142adowa\u0107 historii symulacji.",
+    "retry": "Wygeneruj ponownie"
+  },
+  "cta": {
+    "goToReport": "Przejd\u017a do raportu"
+  }
+}
