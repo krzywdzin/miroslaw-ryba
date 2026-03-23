@@ -6,6 +6,7 @@ import { GraphUploadPage, GraphViewPage } from '@/features/graph'
 import { EnvironmentPage } from '@/features/environment'
 import { SimulationPage } from '@/features/simulation'
 import { ReportPage, HistoryPage } from '@/features/reports'
+import { ChatPage } from '@/features/chat'
 import { NotFoundPage } from '@/features/errors/NotFoundPage'
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: 'simulation', element: <SimulationPage /> },
       { path: 'report/:simulationId', element: <ReportPage /> },
       { path: 'history', element: <HistoryPage /> },
+      { path: 'chat/:simulationId', element: <ChatPage /> },
     ],
   },
 ])
