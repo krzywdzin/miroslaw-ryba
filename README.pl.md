@@ -4,10 +4,31 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19-blue.svg)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6-purple.svg)](https://vite.dev/)
+[![Vibe Coded](https://img.shields.io/badge/Vibe%20Coded-100%25%20AI-ff6b6b.svg)](#-vibe-code-alert)
 
 # Miroslaw Ryba
 
 Nowoczesny frontend React dla [MiroFish](https://github.com/666ghj/MiroFish) -- platformy symulacji spolecznych opartej na LLM do prognozowania i analizy. Zastepuje oryginalny chinski interfejs Vue czystym polsko-angielskim SPA w React.
+
+---
+
+> ## **VIBE CODE ALERT**
+>
+> **Caly ten projekt zostal w 100% zvibecodowany przy uzyciu [Claude Code](https://claude.ai/code) (Claude Opus 4.6).** Zaden czlowiek nie napisal ani jednej linii kodu produkcyjnego. Kazdy komponent, hook, test, tlumaczenie i plik konfiguracyjny zostal wygenerowany przez agenty AI.
+>
+> **Co to oznacza dla Ciebie?**
+>
+> - **Beda** bledy, edge case'y i niedociagniecia, ktorych zaden czlowiek nigdy nie przejrzal
+> - Wzorce kodu moga byc niespojne lub przeinzynierowane w niektorych miejscach
+> - Niektore funkcje moga nie dzialac poprawnie z prawdziwym backendem MiroFish
+> - Testy istnieja, ale moga nie pokrywac rzeczywistych scenariuszy
+> - Polskie tlumaczenia zostaly wygenerowane, nie sprawdzone przez native speakera
+>
+> **To jest eksperyment, nie oprogramowanie produkcyjne.** Traktuj to jako punkt wyjscia, nie gotowy produkt.
+>
+> **Potrzebujemy Twojej pomocy!** Jesli znajdziesz bledy, zle wzorce albo cos co nie ma sensu -- otworz issue albo wyslij PR. Kazdy wklad sprawia ze ten projekt staje sie lepszy. Sprawdz [CONTRIBUTING.md](CONTRIBUTING.md) zeby zaczac.
+
+---
 
 ## Funkcje
 
