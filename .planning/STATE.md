@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 8 plans verified
-last_updated: "2026-03-23T15:13:26.941Z"
+stopped_at: Completed 08-01-PLAN.md
+last_updated: "2026-03-23T15:19:22.549Z"
 last_activity: 2026-03-23 -- Completed 07-02 Simulation history page
 progress:
   total_phases: 10
   completed_phases: 7
   total_plans: 17
-  completed_plans: 15
+  completed_plans: 16
   percent: 100
 ---
 
@@ -59,6 +59,7 @@ Progress: [██████████] 100%
 | Phase 06-simulation P02 | 5min | 3 tasks | 15 files |
 | Phase 07-reports P01 | 4min | 2 tasks | 16 files |
 | Phase 07-reports P02 | 3min | 1 tasks | 4 files |
+| Phase 08-interactive-dialogue P01 | 3min | 2 tasks | 17 files |
 
 ## Accumulated Context
 
@@ -112,6 +113,9 @@ Recent decisions affecting current work:
 - [Phase 07-01]: Print CSS added to globals.css rather than inline style tag for global scope
 - [Phase 07-02]: Explicit z.infer typing for apiRequest responses since generic T defaults to {}
 - [Phase 07-02]: Only date column sortable (desc default), other columns static display
+- [Phase 08-01]: useChatSession onMutate adds user message before API call for instant feedback
+- [Phase 08-01]: AgentTarget discriminated union routes to reportApi.chat or simulationApi.interview
+- [Phase 08-01]: Switching agent clears messages and resets mutation state
 
 ### Pending Todos
 
@@ -125,6 +129,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T15:13:26.939Z
-Stopped at: Phase 8 plans verified
-Resume file: .planning/phases/08-interactive-dialogue/08-01-PLAN.md
+Last session: 2026-03-23T15:19:22.547Z
+Stopped at: Completed 08-01-PLAN.md
+Resume file: None

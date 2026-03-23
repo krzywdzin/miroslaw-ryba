@@ -46,10 +46,10 @@
 
 ### Pipeline — Interaction
 
-- [ ] **CHAT-01**: User can have streaming chat conversation with ReportAgent about the prediction
-- [ ] **CHAT-02**: User can select and chat with any simulated agent in the world
-- [ ] **CHAT-03**: Chat displays agent personality/memory context alongside conversation
-- [ ] **CHAT-04**: Chat renders markdown in responses with proper formatting
+- [x] **CHAT-01**: User can have streaming chat conversation with ReportAgent about the prediction
+- [x] **CHAT-02**: User can select and chat with any simulated agent in the world
+- [x] **CHAT-03**: Chat displays agent personality/memory context alongside conversation
+- [x] **CHAT-04**: Chat renders markdown in responses with proper formatting
 
 ### Internationalization
 
@@ -158,10 +158,10 @@
 | REPT-02 | Phase 7 | Complete |
 | REPT-03 | Phase 7 | Complete |
 | REPT-04 | Phase 7 | Complete |
-| CHAT-01 | Phase 8 | Pending |
-| CHAT-02 | Phase 8 | Pending |
-| CHAT-03 | Phase 8 | Pending |
-| CHAT-04 | Phase 8 | Pending |
+| CHAT-01 | Phase 8 | Complete |
+| CHAT-02 | Phase 8 | Complete |
+| CHAT-03 | Phase 8 | Complete |
+| CHAT-04 | Phase 8 | Complete |
 | UIUX-04 | Phase 9 | Pending |
 | UIUX-07 | Phase 9 | Pending |
 | DOCS-01 | Phase 10 | Pending |
