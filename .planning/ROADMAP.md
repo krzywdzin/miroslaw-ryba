@@ -171,11 +171,11 @@ Plans:
   3. Installation guide covers both Docker and source deployment with step-by-step instructions
   4. Configuration guide documents API key setup, model selection, and Zep Cloud configuration
   5. AGPL-3.0 license file is present and CONTRIBUTING.md guide exists for open-source contributors
-
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 10-01: TBD
+- [ ] 10-01-PLAN.md — LICENSE (AGPL-3.0), README.md (English), README.pl.md (Polish translation)
+- [ ] 10-02-PLAN.md — docs/installation.md (Docker + source), docs/configuration.md (env vars + UI config), CONTRIBUTING.md
 
 ## Progress
 
@@ -193,4 +193,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 7. Reports | 1/2 | In Progress|  |
 | 8. Interactive Dialogue | 1/2 | In Progress|  |
 | 9. Polish and Differentiation | 1/2 | In Progress|  |
-| 10. Documentation and Release | 0/? | Not started | - |
+| 10. Documentation and Release | 0/2 | Not started | - |
