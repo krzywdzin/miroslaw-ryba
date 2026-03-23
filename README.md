@@ -9,17 +9,6 @@
 
 A modern React frontend for [MiroFish](https://github.com/666ghj/MiroFish) -- an LLM-powered social simulation platform for prediction and analysis. Replaces the original Chinese Vue interface with a clean Polish/English React SPA.
 
-## Screenshots
-
-![Graph Construction](docs/screenshots/graph.png)
-<!-- TODO: capture screenshot of graph visualization -->
-
-![Simulation Dual-Platform View](docs/screenshots/simulation.png)
-<!-- TODO: capture screenshot of dual-platform simulation monitoring -->
-
-![Report View](docs/screenshots/report.png)
-<!-- TODO: capture screenshot of report with markdown rendering -->
-
 ## Features
 
 - 5-stage prediction pipeline (Graph -> Environment -> Simulation -> Reports -> Chat)
