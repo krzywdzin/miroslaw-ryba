@@ -42,7 +42,7 @@
 - [x] **REPT-01**: User can view generated prediction report with rich markdown formatting (tables, charts, sections)
 - [x] **REPT-02**: User can export report as PDF
 - [x] **REPT-03**: User can export report as Markdown file
-- [ ] **REPT-04**: User can view list of past simulations with status, date, and topic
+- [x] **REPT-04**: User can view list of past simulations with status, date, and topic
 
 ### Pipeline — Interaction
 
@@ -157,7 +157,7 @@
 | REPT-01 | Phase 7 | Complete |
 | REPT-02 | Phase 7 | Complete |
 | REPT-03 | Phase 7 | Complete |
-| REPT-04 | Phase 7 | Pending |
+| REPT-04 | Phase 7 | Complete |
 | CHAT-01 | Phase 8 | Pending |
 | CHAT-02 | Phase 8 | Pending |
 | CHAT-03 | Phase 8 | Pending |
