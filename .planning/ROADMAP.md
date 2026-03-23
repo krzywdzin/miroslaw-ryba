@@ -155,10 +155,11 @@ Plans:
   1. User can toggle dark mode manually or have it follow OS preference, and the entire UI renders correctly in both themes
   2. User can use keyboard shortcuts for common actions (chat focus, simulation start/stop, panel switching)
   3. All pipeline stages handle edge cases gracefully (empty states, timeouts, partial data)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 09-01: TBD
+- [ ] 09-01-PLAN.md — Dark mode CSS infrastructure, useTheme hook, ThemeSwitcher component, hardcoded color audit, reagraph dark mode
+- [ ] 09-02-PLAN.md — Keyboard shortcuts (react-hotkeys-hook), ShortcutsHelpModal, global shortcut wiring, chat input focus
 
 ### Phase 10: Documentation and Release
 **Goal**: Project is ready for open-source release on GitHub with complete bilingual documentation
@@ -191,5 +192,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 6. Simulation | 2/2 | Complete   | 2026-03-22 |
 | 7. Reports | 1/2 | In Progress|  |
 | 8. Interactive Dialogue | 1/2 | In Progress|  |
-| 9. Polish and Differentiation | 0/? | Not started | - |
+| 9. Polish and Differentiation | 0/2 | Not started | - |
 | 10. Documentation and Release | 0/? | Not started | - |
