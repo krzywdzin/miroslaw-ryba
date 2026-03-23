@@ -5,6 +5,7 @@ import { SettingsPage } from '@/features/settings/SettingsPage'
 import { GraphUploadPage, GraphViewPage } from '@/features/graph'
 import { EnvironmentPage } from '@/features/environment'
 import { SimulationPage } from '@/features/simulation'
+import { ReportPage } from '@/features/reports'
 import { NotFoundPage } from '@/features/errors/NotFoundPage'
 
 const router = createBrowserRouter([
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
       { path: 'graph/view', element: <GraphViewPage /> },
       { path: 'environment', element: <EnvironmentPage /> },
       { path: 'simulation', element: <SimulationPage /> },
+      { path: 'report/:simulationId', element: <ReportPage /> },
+      { path: 'history', element: <div>History</div> },
     ],
   },
 ])
