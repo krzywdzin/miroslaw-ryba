@@ -4,8 +4,8 @@ milestone: v1.0
 milestone_name: milestone
 status: completed
 stopped_at: Completed 10-02-PLAN.md
-last_updated: "2026-03-23T21:49:55.682Z"
-last_activity: 2026-03-23 -- Completed 09-01 Dark mode theming
+last_updated: "2026-03-23T21:50:07.119Z"
+last_activity: 2026-03-23 -- Completed 10-01 LICENSE and bilingual READMEs
 progress:
   total_phases: 10
   completed_phases: 10
@@ -127,6 +127,8 @@ Recent decisions affecting current work:
 - [Phase 09-01]: Used reagraph built-in darkTheme as base with custom edge/label color overrides
 - [Phase 09-01]: defineProperty localStorage mock for jsdom test environment
 - [Phase 10-02]: Docker path as recommended (Option 1) with source as fallback
+- [Phase 10-01]: Used verbatim GNU AGPL-3.0 text from gnu.org (661 lines)
+- [Phase 10-01]: Placeholder OWNER in GitHub URLs for pre-release flexibility
 
 ### Pending Todos
 
