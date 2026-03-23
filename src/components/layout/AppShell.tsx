@@ -6,9 +6,12 @@ import { Sidebar } from './Sidebar'
 import { SidebarMobile } from './SidebarMobile'
 import { Footer } from './Footer'
 import { MinScreenMessage } from '@/components/shared/MinScreenMessage'
+import { useGlobalShortcuts } from '@/hooks/useGlobalShortcuts'
+import { ShortcutsHelpModal } from '@/components/shared/ShortcutsHelpModal'
 
 export function AppShell() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { helpOpen, setHelpOpen } = useGlobalShortcuts()
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -33,6 +36,7 @@ export function AppShell() {
         visibleToasts={3}
         richColors
       />
+      <ShortcutsHelpModal open={helpOpen} onOpenChange={setHelpOpen} />
     </div>
   )
 }
