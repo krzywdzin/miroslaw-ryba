@@ -63,7 +63,7 @@
 - [x] **UIUX-01**: Minimalist, clean design with consistent component library (shadcn/ui)
 - [x] **UIUX-02**: 5-stage pipeline displayed as linear stepper/wizard navigation
 - [x] **UIUX-03**: Responsive layout — desktop-first, graceful degradation to tablet (min 1024px)
-- [ ] **UIUX-04**: Dark mode with OS preference detection and manual toggle
+- [x] **UIUX-04**: Dark mode with OS preference detection and manual toggle
 - [x] **UIUX-05**: Consistent loading states (skeletons, spinners, progress bars) for all async operations
 - [x] **UIUX-06**: Clear error messages with retry buttons for common failures (invalid API key, timeout, model unavailable)
 - [x] **UIUX-07**: Keyboard shortcuts for common actions (chat focus, simulation start/stop, panel switching)
@@ -162,7 +162,7 @@
 | CHAT-02 | Phase 8 | Complete |
 | CHAT-03 | Phase 8 | Complete |
 | CHAT-04 | Phase 8 | Complete |
-| UIUX-04 | Phase 9 | Pending |
+| UIUX-04 | Phase 9 | Complete |
 | UIUX-07 | Phase 9 | Complete |
 | DOCS-01 | Phase 10 | Pending |
 | DOCS-02 | Phase 10 | Pending |
