@@ -133,18 +133,19 @@ Plans:
 - [ ] 07-02-PLAN.md — Simulation history table with status badges, report links, date sorting, HistoryPage
 
 ### Phase 8: Interactive Dialogue
-**Goal**: Users can have streaming conversations with the ReportAgent and simulated agents, completing pipeline stage 5
+**Goal**: Users can have conversations with the ReportAgent and simulated agents via a split-panel chat interface with markdown rendering and agent context display, completing pipeline stage 5
 **Depends on**: Phase 7
 **Requirements**: CHAT-01, CHAT-02, CHAT-03, CHAT-04
 **Success Criteria** (what must be TRUE):
-  1. User can have a streaming chat conversation with the ReportAgent about the prediction report
+  1. User can have a chat conversation with the ReportAgent about the prediction report
   2. User can select any simulated agent and chat with them individually
   3. Chat displays agent personality and memory context alongside the conversation
   4. Chat renders markdown in responses with proper formatting
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 08-01: TBD
+- [ ] 08-01-PLAN.md — Chat types, i18n namespace, useChatSession hook, all UI components (ChatBubble, ChatInput, TypingIndicator, SourcesList, ToolCallsSection, AgentSelector, AgentContextPanel, MessageList)
+- [ ] 08-02-PLAN.md — ChatLayout split-panel, ChatPage orchestrator, route registration, barrel export
 
 ### Phase 9: Polish and Differentiation
 **Goal**: Application reaches production quality with dark mode, keyboard shortcuts, and refinement of all existing features
@@ -189,6 +190,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | 5. Environment Setup | 0/2 | Not started | - |
 | 6. Simulation | 2/2 | Complete   | 2026-03-22 |
 | 7. Reports | 1/2 | In Progress|  |
-| 8. Interactive Dialogue | 0/? | Not started | - |
+| 8. Interactive Dialogue | 0/2 | Not started | - |
 | 9. Polish and Differentiation | 0/? | Not started | - |
 | 10. Documentation and Release | 0/? | Not started | - |
